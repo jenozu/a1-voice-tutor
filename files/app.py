@@ -6,24 +6,24 @@ import random
 
 # Placeholder for utility functions
 import voice_io
-from utils.quiz_generator import (
+from files.quiz_generator import (
     generate_multiple_choice_quiz,
     generate_fill_in_blank_quiz,
     evaluate_answer,
     log_quiz_result
 )
-from utils.srs_engine import (
+from files.srs_engine import (
     get_words_due_for_review,
     update_word_review
 )
-from utils.pronunciation import evaluate_pronunciation
-from utils.xp_badges import add_xp, update_streak, check_for_badges
-from utils.goals import set_goal, get_goal, update_goal_progress, check_goal_completion
-from utils.leaderboard import get_leaderboard
-from utils.grammar_tipper import get_grammar_tip
-from utils.culture_tip import get_culture_tip
-from utils.story_mode import evaluate_story_answer
-from utils.ambient_mode import start_ambient_mode, stop_ambient_mode, is_ambient_active
+from files.pronunciation import evaluate_pronunciation
+from files.xp_badges import add_xp, update_streak, check_for_badges
+from files.goals import set_goal, get_goal, update_goal_progress, check_goal_completion
+from files.leaderboard import get_leaderboard
+from files.grammar_tipper import get_grammar_tip
+from files.culture_tip import get_culture_tip
+from files.story_mode import evaluate_story_answer
+from files.ambient_mode import start_ambient_mode, stop_ambient_mode, is_ambient_active
 
 st.set_page_config(page_title="Polish A1 Voice Tutor", page_icon="🇵🇱", layout="wide")
 

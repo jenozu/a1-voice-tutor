@@ -11,7 +11,6 @@ cffi==1.17.1
 charset-normalizer==3.4.2
 click==8.2.1
 colorama==0.4.6
-comtypes==1.4.11
 filelock==3.18.0
 frozenlist==1.7.0
 fsspec==2025.5.1
@@ -41,11 +40,9 @@ pycparser==2.22
 pydeck==0.9.1
 pydub==0.25.1
 PyJWT==2.10.1
-pypiwin32==223
 python-dateutil==2.9.0.post0
 pyttsx3==2.99
 pytz==2025.2
-pywin32==310
 referencing==0.36.2
 regex==2024.11.6
 requests==2.32.4

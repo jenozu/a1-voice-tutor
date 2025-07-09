@@ -13,7 +13,7 @@ from utils.quiz_generator import (
 )
 from utils.srs_engine import (
     get_words_for_review,
-    update_word_review
+    update_familiarity
 )
 from utils.pronunciation import evaluate_pronunciation
 from utils.xp_badges import add_xp, update_streak, check_for_badges
@@ -389,16 +389,16 @@ elif page == "Review Deck":
             st.write(f"Example: {review_word['example']}")
             col1, col2, col3, col4 = st.columns(4)
             if col1.button("😰 Hard"):
-                update_word_review(user_id, review_word['word'], result="hard", word_bank=word_bank)
+                update_familiarity(user_id, False)
                 st.info("Marked as hard - will review again soon")
             if col2.button("😐 Good"):
-                update_word_review(user_id, review_word['word'], result="good", word_bank=word_bank)
+                update_familiarity(user_id, True)
                 st.info("Marked as good - will review in a few days")
             if col3.button("😊 Easy"):
-                update_word_review(user_id, review_word['word'], result="easy", word_bank=word_bank)
+                update_familiarity(user_id, True)
                 st.info("Marked as easy - will review in a week")
             if col4.button("🎯 Perfect"):
-                update_word_review(user_id, review_word['word'], result="perfect", word_bank=word_bank)
+                update_familiarity(user_id, True)
                 st.info("Marked as perfect - will review in a month")
     else:
         st.success("🎉 No words to review today! Great job!")

@@ -15,7 +15,7 @@ from utils.srs_engine import (
     get_words_for_review,
     update_familiarity
 )
-from utils.pronunciation import evaluate_pronunciation
+from utils.pronunciation import analyze_pronunciation
 from utils.xp_badges import add_xp, update_streak, check_for_badges
 from utils.goals import set_goal, get_goal, update_goal_progress, check_goal_completion
 from utils.leaderboard import get_leaderboard
@@ -245,7 +245,7 @@ elif page == "Quiz Mode":
             if audio_file:
                 st.write("Processing your pronunciation...")
                 expected_phrase = word_bank.sample(1).iloc[0]['word']
-                feedback_result = evaluate_pronunciation(expected_phrase, audio_file)
+                feedback_result = analyze_pronunciation(expected_phrase, audio_file)
                 st.write(f"You said: '{feedback_result['transcription']}'")
                 st.write(f"**Feedback:** {feedback_result['feedback']}")
                 st.write(f"**Score:** {feedback_result['score']:.1f}%")

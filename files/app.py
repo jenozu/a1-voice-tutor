@@ -389,16 +389,16 @@ elif page == "Review Deck":
             col1, col2, col3, col4 = st.columns(4)
             if col1.button("😰 Hard"):
                 update_word_review(user_id, review_word['word'], result="hard", word_bank=word_bank)
-                    st.info("Marked as hard - will review again soon")
+                st.info("Marked as hard - will review again soon")
             if col2.button("😐 Good"):
                 update_word_review(user_id, review_word['word'], result="good", word_bank=word_bank)
-                    st.info("Marked as good - will review in a few days")
+                st.info("Marked as good - will review in a few days")
             if col3.button("😊 Easy"):
                 update_word_review(user_id, review_word['word'], result="easy", word_bank=word_bank)
-                    st.info("Marked as easy - will review in a week")
+                st.info("Marked as easy - will review in a week")
             if col4.button("🎯 Perfect"):
                 update_word_review(user_id, review_word['word'], result="perfect", word_bank=word_bank)
-                    st.info("Marked as perfect - will review in a month")
+                st.info("Marked as perfect - will review in a month")
     else:
         st.success("🎉 No words to review today! Great job!")
 

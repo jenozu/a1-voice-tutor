@@ -1,0 +1,191 @@
+
+[     UTC     ] Logs for a1-voice-tutor.streamlit.app/
+────────────────────────────────────────────────────────────────────────────────────────
+[00:23:52] 🚀 Starting up repository: 'a1-voice-tutor', branch: 'main', main module: 'files/app.py'
+[00:23:52] 🐙 Cloning repository...
+[00:23:53] 🐙 Cloning into '/mount/src/a1-voice-tutor'...
+Warning: Permanently added the ED25519 host key for IP address '140.82.116.4' to the list of known hosts.
+
+[00:23:53] 🐙 Cloned repository!
+[00:23:53] 🐙 Pulling code changes from Github...
+[00:23:54] 📦 Processing dependencies...
+
+──────────────────────────────────────── uv ───────────────────────────────────────────
+
+Using uv pip install.
+Using Python 3.13.5 environment at /home/adminuser/venv
+  × No solution found when resolving dependencies:[2025-07-09 00:23:56.868876] 
+  ╰─▶ Because pywin32==310 has no wheels with a matching Python ABI tag and
+      you require pywin32==310, we can conclude that your requirements are
+      unsatisfiable.
+Checking if Streamlit is installed
+Installing rich for an improved exception logging
+Using uv pip install.
+Using Python 3.13.5 environment at /home/adminuser/venv[2025-07-09 00:23:56.909299] 
+Resolved 4 packages in 134ms
+Prepared 4 packages in 158ms
+Installed 4 packages in 17ms
+ + markdown-it-py==3.0.0
+ + mdurl==0.1.2
+ + pygments==2.19.2
+ + rich==14.0.0
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+
+──────────────────────────────────────── pip ───────────────────────────────────────────
+
+Using standard pip install.
+Collecting aiohappyeyeballs==2.6.1 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 1))
+  Downloading aiohappyeyeballs-2.6.1-py3-none-any.whl.metadata (5.9 kB)
+Collecting aiohttp==3.12.13 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 2))
+  Downloading aiohttp-3.12.13-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (7.6 kB)
+Collecting aiohttp-retry==2.9.1 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 3))
+  Downloading aiohttp_retry-2.9.1-py3-none-any.whl.metadata (8.8 kB)
+Collecting aiosignal==1.4.0 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 4))
+  Downloading aiosignal-1.4.0-py3-none-any.whl.metadata (3.7 kB)
+Collecting altair==5.5.0 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 5))
+  Downloading altair-5.5.0-py3-none-any.whl.metadata (11 kB)
+Collecting attrs==25.3.0 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 6))
+  Downloading attrs-25.3.0-py3-none-any.whl.metadata (10 kB)
+Collecting blinker==1.9.0 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 7))
+  Downloading blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+Collecting cachetools==6.1.0 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 8))
+  Downloading cachetools-6.1.0-py3-none-any.whl.metadata (5.4 kB)
+Collecting certifi==2025.6.15 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 9))
+  Downloading certifi-2025.6.15-py3-none-any.whl.metadata (2.4 kB)
+Collecting cffi==1.17.1 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 10))
+  Downloading cffi-1.17.1-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (1.5 kB)
+Collecting charset-normalizer==3.4.2 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 11))
+  Downloading charset_normalizer-3.4.2-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (35 kB)
+Collecting click==8.2.1 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 12))
+  Downloading click-8.2.1-py3-none-any.whl.metadata (2.5 kB)
+Collecting colorama==0.4.6 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 13))
+  Downloading colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+Collecting comtypes==1.4.11 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 14))
+  Downloading comtypes-1.4.11-py3-none-any.whl.metadata (7.2 kB)
+Collecting filelock==3.18.0 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 15))
+  Downloading filelock-3.18.0-py3-none-any.whl.metadata (2.9 kB)
+Collecting frozenlist==1.7.0 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 16))
+  Downloading frozenlist-1.7.0-cp313-cp313-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (18 kB)
+Collecting fsspec==2025.5.1 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 17))
+  Downloading fsspec-2025.5.1-py3-none-any.whl.metadata (11 kB)
+Collecting gitdb==4.0.12 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 18))
+  Downloading gitdb-4.0.12-py3-none-any.whl.metadata (1.2 kB)
+Collecting GitPython==3.1.44 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 19))
+  Downloading GitPython-3.1.44-py3-none-any.whl.metadata (13 kB)
+Collecting idna==3.10 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 20))
+  Downloading idna-3.10-py3-none-any.whl.metadata (10 kB)
+Collecting Jinja2==3.1.6 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 21))
+  Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting jsonschema==4.24.0 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 22))
+  Downloading jsonschema-4.24.0-py3-none-any.whl.metadata (7.8 kB)
+Collecting jsonschema-specifications==2025.4.1 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 23))
+  Downloading jsonschema_specifications-2025.4.1-py3-none-any.whl.metadata (2.9 kB)
+Collecting llvmlite==0.44.0 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 24))
+  Downloading llvmlite-0.44.0-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.0 kB)
+Collecting MarkupSafe==3.0.2 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 25))
+  Downloading MarkupSafe-3.0.2-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.0 kB)
+Collecting more-itertools==10.7.0 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 26))
+  Downloading more_itertools-10.7.0-py3-none-any.whl.metadata (37 kB)
+Collecting mpmath==1.3.0 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 27))
+  Downloading mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+Collecting multidict==6.6.3 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 28))
+  Downloading multidict-6.6.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (5.3 kB)
+Collecting narwhals==1.46.0 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 29))
+  Downloading narwhals-1.46.0-py3-none-any.whl.metadata (11 kB)
+Collecting networkx==3.5 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 30))
+  Downloading networkx-3.5-py3-none-any.whl.metadata (6.3 kB)
+Collecting numba==0.61.2 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 31))
+  Downloading numba-0.61.2-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.8 kB)
+Collecting numpy==2.2.6 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 32))
+  Downloading numpy-2.2.6-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (62 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.0/62.0 kB 104.2 MB/s eta 0:00:00[2025-07-09 00:24:03.516189] 
+Collecting openai-whisper==20250625 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 33))
+  Downloading openai_whisper-20250625.tar.gz (803 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 803.2/803.2 kB 44.5 MB/s eta 0:00:00[2025-07-09 00:24:03.601076] 
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting packaging==25.0 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 34))
+  Downloading packaging-25.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting pandas==2.3.1 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 35))
+  Downloading pandas-2.3.1-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (91 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 91.2/91.2 kB 130.4 MB/s eta 0:00:00[2025-07-09 00:24:07.784051] 
+Collecting pillow==11.3.0 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 36))
+  Downloading pillow-11.3.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.0 kB)
+Collecting propcache==0.3.2 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 37))
+  Downloading propcache-0.3.2-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (12 kB)
+Collecting protobuf==6.31.1 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 38))
+  Downloading protobuf-6.31.1-cp39-abi3-manylinux2014_x86_64.whl.metadata (593 bytes)
+Collecting pyarrow==20.0.0 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 39))
+  Downloading pyarrow-20.0.0-cp313-cp313-manylinux_2_28_x86_64.whl.metadata (3.3 kB)
+Collecting pycparser==2.22 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 40))
+  Downloading pycparser-2.22-py3-none-any.whl.metadata (943 bytes)
+Collecting pydeck==0.9.1 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 41))
+  Downloading pydeck-0.9.1-py2.py3-none-any.whl.metadata (4.1 kB)
+Collecting pydub==0.25.1 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 42))
+  Downloading pydub-0.25.1-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting PyJWT==2.10.1 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 43))
+  Downloading PyJWT-2.10.1-py3-none-any.whl.metadata (4.0 kB)
+Collecting pypiwin32==223 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 44))
+  Downloading pypiwin32-223-py3-none-any.whl.metadata (236 bytes)
+Collecting python-dateutil==2.9.0.post0 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 45))
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pyttsx3==2.99 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 46))
+  Downloading pyttsx3-2.99-py3-none-any.whl.metadata (6.2 kB)
+Collecting pytz==2025.2 (from -r /mount/src/a1-voice-tutor/files/requirements.txt (line 47))
+  Downloading pytz-2025.2-py2.py3-none-any.whl.metadata (22 kB)
+ERROR: Ignored the following versions that require a different python version: 0.36.0 Requires-Python >=3.6,<3.10; 0.37.0 Requires-Python >=3.7,<3.10; 0.38.0 Requires-Python >=3.7,<3.11; 0.38.1 Requires-Python >=3.7,<3.11; 0.52.0 Requires-Python >=3.6,<3.9; 0.52.0rc3 Requires-Python >=3.6,<3.9; 0.53.0 Requires-Python >=3.6,<3.10; 0.53.0rc1.post1 Requires-Python >=3.6,<3.10; 0.53.0rc2 Requires-Python >=3.6,<3.10; 0.53.0rc3 Requires-Python >=3.6,<3.10; 0.53.1 Requires-Python >=3.6,<3.10; 0.54.0 Requires-Python >=3.7,<3.10; 0.54.0rc2 Requires-Python >=3.7,<3.10; 0.54.0rc3 Requires-Python >=3.7,<3.10; 0.54.1 Requires-Python >=3.7,<3.10; 0.55.0 Requires-Python >=3.7,<3.11; 0.55.0rc1 Requires-Python >=3.7,<3.11; 0.55.1 Requires-Python >=3.7,<3.11; 0.55.2 Requires-Python >=3.7,<3.11; 1.21.2 Requires-Python >=3.7,<3.11; 1.21.3 Requires-Python >=3.7,<3.11; 1.21.4 Requires-Python >=3.7,<3.11; 1.21.5 Requires-Python >=3.7,<3.11; 1.21.6 Requires-Python >=3.7,<3.11; 1.26.0 Requires-Python <3.13,>=3.9; 1.26.1 Requires-Python <3.13,>=3.9
+ERROR: Could not find a version that satisfies the requirement pywin32==310 (from versions: none)
+ERROR: No matching distribution found for pywin32==310
+
+[notice] A new release of pip is available: 24.0 -> 25.1.1
+[notice] To update, run: pip install --upgrade pip
+Checking if Streamlit is installed
+Installing rich for an improved exception logging
+Using standard pip install.
+Collecting rich>=10.14.0
+  Downloading rich-14.0.0-py3-none-any.whl.metadata (18 kB)
+Collecting markdown-it-py>=2.2.0 (from rich>=10.14.0)
+  Downloading markdown_it_py-3.0.0-py3-none-any.whl.metadata (6.9 kB)
+Collecting pygments<3.0.0,>=2.13.0 (from rich>=10.14.0)
+  Downloading pygments-2.19.2-py3-none-any.whl.metadata (2.5 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=10.14.0)
+  Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Downloading rich-14.0.0-py3-none-any.whl (243 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 243.2/243.2 kB 14.7 MB/s eta 0:00:00[2025-07-09 00:24:11.860743] 
+Downloading markdown_it_py-3.0.0-py3-none-any.whl (87 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.5/87.5 kB 199.8 MB/s eta 0:00:00[2025-07-09 00:24:11.873455] 
+Downloading pygments-2.19.2-py3-none-any.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 137.3 MB/s eta 0:00:00[2025-07-09 00:24:11.902703] 
+Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Installing collected packages: pygments, mdurl, markdown-it-py, rich
+  Attempting uninstall: pygments
+    Found existing installation: Pygments 2.19.2
+    Uninstalling Pygments-2.19.2:
+      Successfully uninstalled Pygments-2.19.2
+  Attempting uninstall: mdurl
+    Found existing installation: mdurl 0.1.2
+    Uninstalling mdurl-0.1.2:
+      Successfully uninstalled mdurl-0.1.2
+  Attempting uninstall: markdown-it-py
+    Found existing installation: markdown-it-py 3.0.0
+    Uninstalling markdown-it-py-3.0.0:
+      Successfully uninstalled markdown-it-py-3.0.0
+  Attempting uninstall: rich
+    Found existing installation: rich 14.0.0
+    Uninstalling rich-14.0.0:
+      Successfully uninstalled rich-14.0.0
+Successfully installed markdown-it-py-3.0.0 mdurl-0.1.2 pygments-2.19.2 rich-14.0.0
+
+[notice] A new release of pip is available: 24.0 -> 25.1.1
+[notice] To update, run: pip install --upgrade pip
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+[00:24:14] ❗️ installer returned a non-zero exit code
+[00:24:14] ❗️ Error during processing dependencies! Please fix the error and push an update, or try restarting the app.

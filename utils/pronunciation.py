@@ -7,7 +7,7 @@ from difflib import SequenceMatcher
 import re
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '.')))
-import voice_io
+from utils import voice_io
 
 def analyze_pronunciation(audio_file, expected_text):
     """

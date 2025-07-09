@@ -6,3 +6,5 @@ venv/
 
 # Ignore local environment variables
 .env 
+# Ignore Streamlit secrets
+.streamlit/secrets.toml 

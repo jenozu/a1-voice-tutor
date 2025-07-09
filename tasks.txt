@@ -12,8 +12,8 @@ Deployment Checklist for Polish A1 Voice Tutor Streamlit App
    2.3 (Optional) Add .env for local testing [x]
 
 3. Push to GitHub [ ]
-   3.1 Commit all code, requirements, and data files [ ]
-   3.2 Push to public GitHub repository [ ]
+   3.1 Commit all code, requirements, and data files [x]
+   3.2 Push to public GitHub repository [x]
 
 4. Deploy on Streamlit Community Cloud [ ]
    4.1 Log in to Streamlit Cloud [ ]

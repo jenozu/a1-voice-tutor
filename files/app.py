@@ -5,7 +5,7 @@ from datetime import date, datetime
 import random
 
 # Placeholder for utility functions
-from utils import voice_io
+import voice_io
 from utils.quiz_generator import (
     generate_multiple_choice_quiz,
     generate_fill_in_blank_quiz,

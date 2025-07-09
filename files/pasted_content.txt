@@ -1,0 +1,106 @@
+# 🧠 Prompt: Build Full Streamlit App for “Polish A1 Voice Tutor”
+
+I want you to build a Streamlit-based language learning app called **Polish A1 Voice Tutor**. This is a voice-first study tool for CEFR A1-level learners, combining vocabulary review, quizzes, conversation practice, grammar insights, spaced repetition, gamification, and more. The final app must be fully functional with modular code, CSV-based persistence, and clear folder structure.
+
+Please use the two markdown documents below as your detailed implementation references:
+
+- **[lang-prd-updated.md](./lang-prd-updated.md)** — Product Requirements Document
+- **[lang-readme-updated.md](./lang-readme-updated.md)** — Complete app spec + folder layout
+
+---
+
+## 🎯 Core Deliverables
+
+1. **Streamlit App (app.py)** that includes:
+   - Home dashboard with:
+     - Word of the Day
+     - Streak tracker
+     - Daily goal progress
+   - Tabs or sidebar for:
+     - Word Bank
+     - Quiz Mode (voice + text input)
+     - Conversation Practice (AI plays roles)
+     - Story Mode
+     - Review Deck (spaced repetition)
+     - Settings
+   - Built-in audio input/output using Whisper, pyttsx3, or Google STT
+
+2. **Utility modules** in `/utils`:
+   - `srs_engine.py` — spaced repetition logic
+   - `pronunciation.py` — speech scoring with feedback
+   - `quiz_generator.py` — smart quiz builder
+   - `story_mode.py` — graded stories with Q&A
+   - `xp_badges.py` — tracks XP, badges, and streaks
+   - `sms_reminder.py` — optional SMS via Twilio
+   - `ambient_mode.py` — continuous conversation with auto-pause
+   - `goals.py` — daily/weekly goal tracking
+   - `grammar_tipper.py`, `culture_tip.py` — inject tips by context
+   - `voice_io.py` — handles all voice input/output
+
+3. **Data files** in `/data` folder (use dummy starter content):
+   - `word_bank.csv`
+   - `users.csv`
+   - `quiz_log.csv`
+   - `stories.csv`
+   - `leaderboard.csv`
+   - `grammar_tips.json`
+   - `culture_notes.json`
+
+4. **Gamification logic**:
+   - Earn XP for quizzes, stories, practice
+   - Badges for milestones (5-day streak, 100 XP, etc.)
+   - Leaderboard sorted weekly by XP
+
+5. **Reminders + SMS feature**:
+   - User can set reminder time in Settings
+   - Option to enter phone number for daily SMS (via Twilio)
+   - Supports timezone and phone validation
+
+6. **Word of the Day system**:
+   - Rotates through words from `word_bank.csv`
+   - Includes pronunciation audio and usage
+
+7. **Custom AI Tutor Voices**:
+   - User selects from voice styles: “Tutor Magda”, “Coach Piotr”, “Professor Jan”
+   - Affects tone/style of TTS and response phrasing
+
+---
+
+## 🧪 Tech Stack Requirements
+
+- **Streamlit** frontend
+- **Whisper / Wav2Vec2 / Google STT** for speech recognition
+- **pyttsx3 or gTTS** for TTS
+- **Twilio API** for SMS
+- **CSV or SQLite** persistence (keep it local and simple)
+- **Modular Python code** organized by function
+
+---
+
+## 🗂 Folder Structure (expected)
+
+/polish_voice_tutor/
+├── app.py
+├── data/
+├── utils/
+├── lang-prd-updated.md
+├── lang-readme-updated.md
+└── requirements.txt
+
+yaml
+Copy
+Edit
+
+---
+
+## ✅ Expectations
+
+- Follow README + PRD exactly
+- Keep all logic reusable and clean
+- Use st.session_state or a simple store to track streaks, goal progress, and quiz history
+- Ensure it works **offline if needed** for core features (except SMS)
+- Test with mock data for quizzes and stories
+
+---
+
+Once complete, package everything together. Let me know what modules you’re working on as you go.

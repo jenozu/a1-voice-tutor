@@ -1,0 +1,23 @@
+word,translation,example,audio,tags,familiarity
+cześć,hello,"Cześć, jak się masz?",hello.mp3,greeting,5
+dziękuję,thank you,Dziękuję bardzo.,thank_you.mp3,common,7
+tak,yes,Tak to prawda.,yes.mp3,common,8
+nie,no,Nie rozumiem.,no.mp3,common,6
+proszę,please,Proszę o pomoc.,please.mp3,common,4
+miło,nice,Miło Cię poznać.,nice.mp3,greeting,3
+nazywam,my name is,Nazywam się Anna.,name.mp3,greeting,2
+jestem,I am,Jestem z Polski.,identity.mp3,common,5
+dom,house,To jest mój dom.,house.mp3,family,4
+woda,water,Chcę wodę.,water.mp3,food,6
+chleb,bread,Kupuję chleb.,bread.mp3,food,3
+mleko,milk,Piję mleko.,milk.mp3,food,5
+kot,cat,Mam kota.,cat.mp3,animals,7
+pies,dog,To jest mój pies.,dog.mp3,animals,6
+czerwony,red,Czerwone jabłko.,red.mp3,colors,4
+niebieski,blue,Niebieskie niebo.,blue.mp3,colors,3
+jeden,one,Jeden plus jeden.,one.mp3,numbers,8
+dwa,two,Dwa koty.,two.mp3,numbers,7
+trzy,three,Trzy jabłka.,three.mp3,numbers,6
+cztery,four,Cztery psy.,four.mp3,numbers,5
+
+

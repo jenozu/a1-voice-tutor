@@ -1,0 +1,8 @@
+# Ignore Vosk model directory
+models/vosk-pl/
+
+# Ignore Python virtual environment
+venv/
+
+# Ignore local environment variables
+.env 

@@ -1,0 +1,39 @@
+Deployment Checklist for Polish A1 Voice Tutor Streamlit App
+
+1. Prepare Repository [ ]
+   1.1 Ensure all app code and utility files are present [x]
+   1.2 Ensure requirements.txt is complete and up to date [x]
+   1.3 Add README.md with usage instructions [x]
+   1.4 Add .streamlit/secrets.toml template (do not commit secrets) [x]
+
+2. Set Up Environment Variables/Secrets [ ]
+   2.1 List all required secrets (OpenAI, Twilio, etc.) [x]
+   2.2 Add secrets to Streamlit Cloud via web UI [x]
+   2.3 (Optional) Add .env for local testing [x]
+
+3. Push to GitHub [ ]
+   3.1 Commit all code, requirements, and data files [ ]
+   3.2 Push to public GitHub repository [ ]
+
+4. Deploy on Streamlit Community Cloud [ ]
+   4.1 Log in to Streamlit Cloud [ ]
+   4.2 Create new app, select repo and app.py [ ]
+   4.3 Paste secrets in the "Secrets" section [ ]
+   4.4 Click Deploy [ ]
+
+5. Voice/Speech Library Support [ ]
+   5.1 Confirm all audio dependencies in requirements.txt [ ]
+   5.2 Test browser-based audio input/output [ ]
+   5.3 Add fallback for audio file upload if needed [ ]
+
+6. Test and Troubleshoot [ ]
+   6.1 Open deployed app and test all features [ ]
+   6.2 Check logs for errors (dependencies, APIs, audio) [ ]
+   6.3 Test on multiple devices/browsers [ ]
+   6.4 Share app link for beta feedback [ ]
+
+7. (Optional) DigitalOcean Fallback [ ]
+   7.1 Create and configure droplet [ ]
+   7.2 Install dependencies and set environment variables [ ]
+   7.3 Run app and test all features [ ]
+   7.4 Set up HTTPS if needed [ ] 

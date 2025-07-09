@@ -1,0 +1,19 @@
+streamlit>=1.25.0
+pandas>=2.0.0
+numpy>=1.23.0
+openai-whisper
+gtts
+pyttsx3
+SpeechRecognition
+pyaudio
+transformers
+torch
+sentencepiece
+twilio
+python-dotenv
+datetime
+langdetect
+scikit-learn
+# Optional for enhanced local dev
+streamlit-option-menu
+streamlit_extras 

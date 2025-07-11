@@ -1,4 +1,4 @@
-Deployment Checklist for Polish A1 Voice Tutor Streamlit App
+   Deployment Checklist for Polish A1 Voice Tutor Streamlit App
 
 1. Prepare Repository [ ]
    1.1 Ensure all app code and utility files are present [x]

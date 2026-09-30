@@ -1,10 +1,39 @@
-# Ignore Vosk model directory
-models/vosk-pl/
+# Environment / secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
 
-# Ignore Python virtual environment
+# Python
+__pycache__/
+*.py[cod]
+.venv/
 venv/
+.pytest_cache/
+.ruff_cache/
 
-# Ignore local environment variables
-.env 
-# Ignore Streamlit secrets
-.streamlit/secrets.toml 
+# Node / Next.js
+node_modules/
+.next/
+out/
+dist/
+coverage/
+
+# Local data
+*.db
+*.sqlite
+*.sqlite3
+data/user/
+data/private/
+uploads/
+recordings/
+audio-cache/
+
+# Speech models
+models/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

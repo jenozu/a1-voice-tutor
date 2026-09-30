@@ -39,9 +39,8 @@ def stage_1_session(session_number: int) -> dict[str, Any]:
     if session is None:
         raise KeyError(session_number)
 
-    wanted = set(session["item_ids"])
     items_by_id = {item["id"]: item for item in data["items"]}
-    ordered_items = [items_by_id[item_id] for item_id in session["item_ids"] if item_id in wanted]
+    ordered_items = [items_by_id[item_id] for item_id in session["item_ids"] if item_id in items_by_id]
 
     return {
         **session,

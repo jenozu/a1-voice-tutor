@@ -10,12 +10,12 @@
 - [x] Remove tracked Streamlit secrets file from this branch
 
 ## Phase 1 — Scaffold
-- [ ] Create `frontend/` Next.js App Router + TypeScript + Tailwind
-- [ ] Create `backend/` FastAPI service
-- [ ] Add `/health` endpoint
-- [ ] Add SQLite initialization
-- [ ] Add Russian course content directory
-- [ ] Add local dev commands
+- [x] Create `frontend/` Next.js App Router + TypeScript + Tailwind
+- [x] Create `backend/` FastAPI service
+- [x] Add `/health` endpoint
+- [x] Add SQLite initialization
+- [x] Add Russian course content directory
+- [x] Add local dev commands
 
 ## Phase 2 — Onboarding and planner
 - [ ] Collect target date, study days, minutes/day or hours/week

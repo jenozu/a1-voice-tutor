@@ -1,3 +1,3 @@
 # A1 Voice Tutor
 
-Pre-build foundation for the Russian A1 mobile-first web app.
+Russian A1 mobile-first web app. See `PRD.md` and `docs/TECH_STACK.md` for the new MVP architecture.

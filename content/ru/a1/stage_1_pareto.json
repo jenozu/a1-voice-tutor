@@ -1,0 +1,1114 @@
+{
+  "schema_version": 1,
+  "language": "ru",
+  "level": "A1",
+  "stage": 1,
+  "title": "Pareto Russian Survival Core",
+  "selection_model": {
+    "method": "Pareto-inspired utility prioritization",
+    "note": "This is not presented as a literal corpus-frequency top-100 ranking. Items are prioritized for commonness, combinability, beginner survival value and reuse across many sentences.",
+    "core_building_blocks": 65,
+    "conversational_chunks": 35,
+    "session_size": 10
+  },
+  "mastery_gate": {
+    "recognition_percent": 80,
+    "production_percent": 70,
+    "rule": "Advance when both thresholds are met; continue reviewing weak items through spaced repetition instead of waiting for 100%."
+  },
+  "teaching_cycle": [
+    "understand the meaning",
+    "hear the Russian",
+    "say it aloud",
+    "recognize the Cyrillic",
+    "recall from English without looking",
+    "recombine it in a short sentence or dialogue",
+    "send weak items to spaced review"
+  ],
+  "romanization_policy": {
+    "sessions_1_to_3": "visible by default",
+    "sessions_4_to_6": "available as a hint",
+    "sessions_7_to_10": "hidden by default; reveal only when needed"
+  },
+  "practice_rules": {
+    "new_items_per_session": 10,
+    "five_second_recall": true,
+    "immediate_recombination": true,
+    "speaking_required": true,
+    "passive_rereading_is_not_mastery": true
+  },
+  "sessions": [
+    {
+      "number": 1,
+      "title": "Meet someone immediately",
+      "item_ids": [
+        "p001",
+        "p002",
+        "p003",
+        "p004",
+        "p005",
+        "p006",
+        "p007",
+        "p008",
+        "p009",
+        "p010"
+      ],
+      "focus": "identity, yes/no, negation and a first introduction"
+    },
+    {
+      "number": 2,
+      "title": "People and basic conversation",
+      "item_ids": [
+        "p011",
+        "p012",
+        "p013",
+        "p014",
+        "p015",
+        "p016",
+        "p017",
+        "p018",
+        "p019",
+        "p020"
+      ],
+      "focus": "people, who/what/how and social basics"
+    },
+    {
+      "number": 3,
+      "title": "Ask for information",
+      "item_ids": [
+        "p021",
+        "p022",
+        "p023",
+        "p024",
+        "p025",
+        "p026",
+        "p027",
+        "p028",
+        "p029",
+        "p030"
+      ],
+      "focus": "high-value question words and location/origin"
+    },
+    {
+      "number": 4,
+      "title": "Connect thoughts and survive confusion",
+      "item_ids": [
+        "p031",
+        "p032",
+        "p033",
+        "p034",
+        "p035",
+        "p036",
+        "p037",
+        "p038",
+        "p039",
+        "p040"
+      ],
+      "focus": "connectors plus know/understand survival phrases"
+    },
+    {
+      "number": 5,
+      "title": "Time, place and natural responses",
+      "item_ids": [
+        "p041",
+        "p042",
+        "p043",
+        "p044",
+        "p045",
+        "p046",
+        "p047",
+        "p048",
+        "p049",
+        "p050"
+      ],
+      "focus": "common particles, location and quick responses"
+    },
+    {
+      "number": 6,
+      "title": "Talk about today and ask permission",
+      "item_ids": [
+        "p051",
+        "p052",
+        "p053",
+        "p054",
+        "p055",
+        "p056",
+        "p057",
+        "p058",
+        "p059",
+        "p060"
+      ],
+      "focus": "time, possibility and needs"
+    },
+    {
+      "number": 7,
+      "title": "Needs, wants and possession",
+      "item_ids": [
+        "p061",
+        "p062",
+        "p063",
+        "p064",
+        "p065",
+        "p066",
+        "p067",
+        "p068",
+        "p069",
+        "p070"
+      ],
+      "focus": "core verbs and reusable personal patterns"
+    },
+    {
+      "number": 8,
+      "title": "Speak, move and repair conversation",
+      "item_ids": [
+        "p071",
+        "p072",
+        "p073",
+        "p074",
+        "p075",
+        "p076",
+        "p077",
+        "p078",
+        "p079",
+        "p080"
+      ],
+      "focus": "speech, movement and learner survival"
+    },
+    {
+      "number": 9,
+      "title": "Daily life and preferences",
+      "item_ids": [
+        "p081",
+        "p082",
+        "p083",
+        "p084",
+        "p085",
+        "p086",
+        "p087",
+        "p088",
+        "p089",
+        "p090"
+      ],
+      "focus": "work, living, liking and first prepositions"
+    },
+    {
+      "number": 10,
+      "title": "Preposition glue and practical wrap-up",
+      "item_ids": [
+        "p091",
+        "p092",
+        "p093",
+        "p094",
+        "p095",
+        "p096",
+        "p097",
+        "p098",
+        "p099",
+        "p100"
+      ],
+      "focus": "high-utility prepositions and practical social phrases"
+    }
+  ],
+  "items": [
+    {
+      "id": "p001",
+      "order": 1,
+      "cyrillic": "Я",
+      "romanization": "ya",
+      "english": "I",
+      "kind": "building_block",
+      "category": "pronoun"
+    },
+    {
+      "id": "p002",
+      "order": 2,
+      "cyrillic": "Ты",
+      "romanization": "ty",
+      "english": "you (informal)",
+      "kind": "building_block",
+      "category": "pronoun"
+    },
+    {
+      "id": "p003",
+      "order": 3,
+      "cyrillic": "Вы",
+      "romanization": "vy",
+      "english": "you (formal/plural)",
+      "kind": "building_block",
+      "category": "pronoun"
+    },
+    {
+      "id": "p004",
+      "order": 4,
+      "cyrillic": "Это",
+      "romanization": "eto",
+      "english": "this / it / this is",
+      "kind": "building_block",
+      "category": "pronoun"
+    },
+    {
+      "id": "p005",
+      "order": 5,
+      "cyrillic": "Да",
+      "romanization": "da",
+      "english": "yes",
+      "kind": "building_block",
+      "category": "particle"
+    },
+    {
+      "id": "p006",
+      "order": 6,
+      "cyrillic": "Нет",
+      "romanization": "net",
+      "english": "no",
+      "kind": "building_block",
+      "category": "particle"
+    },
+    {
+      "id": "p007",
+      "order": 7,
+      "cyrillic": "Не",
+      "romanization": "ne",
+      "english": "not",
+      "kind": "building_block",
+      "category": "particle"
+    },
+    {
+      "id": "p008",
+      "order": 8,
+      "cyrillic": "Привет",
+      "romanization": "privet",
+      "english": "hi / hello",
+      "kind": "conversation_chunk",
+      "category": "social"
+    },
+    {
+      "id": "p009",
+      "order": 9,
+      "cyrillic": "Меня зовут...",
+      "romanization": "menya zovut...",
+      "english": "my name is...",
+      "kind": "conversation_chunk",
+      "category": "introduction"
+    },
+    {
+      "id": "p010",
+      "order": 10,
+      "cyrillic": "Спасибо",
+      "romanization": "spasibo",
+      "english": "thank you",
+      "kind": "conversation_chunk",
+      "category": "social"
+    },
+    {
+      "id": "p011",
+      "order": 11,
+      "cyrillic": "Он",
+      "romanization": "on",
+      "english": "he",
+      "kind": "building_block",
+      "category": "pronoun"
+    },
+    {
+      "id": "p012",
+      "order": 12,
+      "cyrillic": "Она",
+      "romanization": "ona",
+      "english": "she",
+      "kind": "building_block",
+      "category": "pronoun"
+    },
+    {
+      "id": "p013",
+      "order": 13,
+      "cyrillic": "Мы",
+      "romanization": "my",
+      "english": "we",
+      "kind": "building_block",
+      "category": "pronoun"
+    },
+    {
+      "id": "p014",
+      "order": 14,
+      "cyrillic": "Они",
+      "romanization": "oni",
+      "english": "they",
+      "kind": "building_block",
+      "category": "pronoun"
+    },
+    {
+      "id": "p015",
+      "order": 15,
+      "cyrillic": "Кто",
+      "romanization": "kto",
+      "english": "who",
+      "kind": "building_block",
+      "category": "question"
+    },
+    {
+      "id": "p016",
+      "order": 16,
+      "cyrillic": "Что",
+      "romanization": "chto",
+      "english": "what",
+      "kind": "building_block",
+      "category": "question"
+    },
+    {
+      "id": "p017",
+      "order": 17,
+      "cyrillic": "Как",
+      "romanization": "kak",
+      "english": "how",
+      "kind": "building_block",
+      "category": "question"
+    },
+    {
+      "id": "p018",
+      "order": 18,
+      "cyrillic": "Здравствуйте",
+      "romanization": "zdravstvuyte",
+      "english": "hello (formal)",
+      "kind": "conversation_chunk",
+      "category": "social"
+    },
+    {
+      "id": "p019",
+      "order": 19,
+      "cyrillic": "Пока",
+      "romanization": "poka",
+      "english": "bye",
+      "kind": "conversation_chunk",
+      "category": "social"
+    },
+    {
+      "id": "p020",
+      "order": 20,
+      "cyrillic": "Как дела?",
+      "romanization": "kak dela?",
+      "english": "how are you?",
+      "kind": "conversation_chunk",
+      "category": "social"
+    },
+    {
+      "id": "p021",
+      "order": 21,
+      "cyrillic": "Где",
+      "romanization": "gde",
+      "english": "where",
+      "kind": "building_block",
+      "category": "question"
+    },
+    {
+      "id": "p022",
+      "order": 22,
+      "cyrillic": "Куда",
+      "romanization": "kuda",
+      "english": "where to",
+      "kind": "building_block",
+      "category": "question"
+    },
+    {
+      "id": "p023",
+      "order": 23,
+      "cyrillic": "Откуда",
+      "romanization": "otkuda",
+      "english": "where from",
+      "kind": "building_block",
+      "category": "question"
+    },
+    {
+      "id": "p024",
+      "order": 24,
+      "cyrillic": "Когда",
+      "romanization": "kogda",
+      "english": "when",
+      "kind": "building_block",
+      "category": "question"
+    },
+    {
+      "id": "p025",
+      "order": 25,
+      "cyrillic": "Почему",
+      "romanization": "pochemu",
+      "english": "why",
+      "kind": "building_block",
+      "category": "question"
+    },
+    {
+      "id": "p026",
+      "order": 26,
+      "cyrillic": "Сколько",
+      "romanization": "skolko",
+      "english": "how much / how many",
+      "kind": "building_block",
+      "category": "question"
+    },
+    {
+      "id": "p027",
+      "order": 27,
+      "cyrillic": "Какой",
+      "romanization": "kakoy",
+      "english": "which / what kind",
+      "kind": "building_block",
+      "category": "question"
+    },
+    {
+      "id": "p028",
+      "order": 28,
+      "cyrillic": "Я из...",
+      "romanization": "ya iz...",
+      "english": "I'm from...",
+      "kind": "conversation_chunk",
+      "category": "introduction"
+    },
+    {
+      "id": "p029",
+      "order": 29,
+      "cyrillic": "Что это?",
+      "romanization": "chto eto?",
+      "english": "what is this?",
+      "kind": "conversation_chunk",
+      "category": "question"
+    },
+    {
+      "id": "p030",
+      "order": 30,
+      "cyrillic": "Где...?",
+      "romanization": "gde...?",
+      "english": "where is...?",
+      "kind": "conversation_chunk",
+      "category": "question"
+    },
+    {
+      "id": "p031",
+      "order": 31,
+      "cyrillic": "И",
+      "romanization": "i",
+      "english": "and",
+      "kind": "building_block",
+      "category": "connector"
+    },
+    {
+      "id": "p032",
+      "order": 32,
+      "cyrillic": "А",
+      "romanization": "a",
+      "english": "and / but (contrast)",
+      "kind": "building_block",
+      "category": "connector"
+    },
+    {
+      "id": "p033",
+      "order": 33,
+      "cyrillic": "Но",
+      "romanization": "no",
+      "english": "but",
+      "kind": "building_block",
+      "category": "connector"
+    },
+    {
+      "id": "p034",
+      "order": 34,
+      "cyrillic": "Или",
+      "romanization": "ili",
+      "english": "or",
+      "kind": "building_block",
+      "category": "connector"
+    },
+    {
+      "id": "p035",
+      "order": 35,
+      "cyrillic": "Потому что",
+      "romanization": "potomu chto",
+      "english": "because",
+      "kind": "building_block",
+      "category": "connector"
+    },
+    {
+      "id": "p036",
+      "order": 36,
+      "cyrillic": "Если",
+      "romanization": "yesli",
+      "english": "if",
+      "kind": "building_block",
+      "category": "connector"
+    },
+    {
+      "id": "p037",
+      "order": 37,
+      "cyrillic": "Тоже",
+      "romanization": "tozhe",
+      "english": "also / too",
+      "kind": "building_block",
+      "category": "particle"
+    },
+    {
+      "id": "p038",
+      "order": 38,
+      "cyrillic": "Я не знаю",
+      "romanization": "ya ne znayu",
+      "english": "I don't know",
+      "kind": "conversation_chunk",
+      "category": "survival"
+    },
+    {
+      "id": "p039",
+      "order": 39,
+      "cyrillic": "Я не понимаю",
+      "romanization": "ya ne ponimayu",
+      "english": "I don't understand",
+      "kind": "conversation_chunk",
+      "category": "survival"
+    },
+    {
+      "id": "p040",
+      "order": 40,
+      "cyrillic": "Я понимаю",
+      "romanization": "ya ponimayu",
+      "english": "I understand",
+      "kind": "conversation_chunk",
+      "category": "survival"
+    },
+    {
+      "id": "p041",
+      "order": 41,
+      "cyrillic": "Только",
+      "romanization": "tolko",
+      "english": "only / just",
+      "kind": "building_block",
+      "category": "particle"
+    },
+    {
+      "id": "p042",
+      "order": 42,
+      "cyrillic": "Ещё",
+      "romanization": "yeshchyo",
+      "english": "still / more / another",
+      "kind": "building_block",
+      "category": "particle"
+    },
+    {
+      "id": "p043",
+      "order": 43,
+      "cyrillic": "Уже",
+      "romanization": "uzhe",
+      "english": "already",
+      "kind": "building_block",
+      "category": "particle"
+    },
+    {
+      "id": "p044",
+      "order": 44,
+      "cyrillic": "Очень",
+      "romanization": "ochen",
+      "english": "very",
+      "kind": "building_block",
+      "category": "adverb"
+    },
+    {
+      "id": "p045",
+      "order": 45,
+      "cyrillic": "Здесь",
+      "romanization": "zdes",
+      "english": "here",
+      "kind": "building_block",
+      "category": "location"
+    },
+    {
+      "id": "p046",
+      "order": 46,
+      "cyrillic": "Там",
+      "romanization": "tam",
+      "english": "there",
+      "kind": "building_block",
+      "category": "location"
+    },
+    {
+      "id": "p047",
+      "order": 47,
+      "cyrillic": "Сейчас",
+      "romanization": "seychas",
+      "english": "now",
+      "kind": "building_block",
+      "category": "time"
+    },
+    {
+      "id": "p048",
+      "order": 48,
+      "cyrillic": "Хорошо",
+      "romanization": "khorosho",
+      "english": "good / well / okay",
+      "kind": "conversation_chunk",
+      "category": "response"
+    },
+    {
+      "id": "p049",
+      "order": 49,
+      "cyrillic": "Нормально",
+      "romanization": "normalno",
+      "english": "fine / okay",
+      "kind": "conversation_chunk",
+      "category": "response"
+    },
+    {
+      "id": "p050",
+      "order": 50,
+      "cyrillic": "Может быть",
+      "romanization": "mozhet byt",
+      "english": "maybe",
+      "kind": "conversation_chunk",
+      "category": "response"
+    },
+    {
+      "id": "p051",
+      "order": 51,
+      "cyrillic": "Сегодня",
+      "romanization": "segodnya",
+      "english": "today",
+      "kind": "building_block",
+      "category": "time"
+    },
+    {
+      "id": "p052",
+      "order": 52,
+      "cyrillic": "Завтра",
+      "romanization": "zavtra",
+      "english": "tomorrow",
+      "kind": "building_block",
+      "category": "time"
+    },
+    {
+      "id": "p053",
+      "order": 53,
+      "cyrillic": "Вчера",
+      "romanization": "vchera",
+      "english": "yesterday",
+      "kind": "building_block",
+      "category": "time"
+    },
+    {
+      "id": "p054",
+      "order": 54,
+      "cyrillic": "Иногда",
+      "romanization": "inogda",
+      "english": "sometimes",
+      "kind": "building_block",
+      "category": "frequency"
+    },
+    {
+      "id": "p055",
+      "order": 55,
+      "cyrillic": "Можно",
+      "romanization": "mozhno",
+      "english": "may / can / it is possible",
+      "kind": "building_block",
+      "category": "modal"
+    },
+    {
+      "id": "p056",
+      "order": 56,
+      "cyrillic": "Нужно",
+      "romanization": "nuzhno",
+      "english": "need / necessary",
+      "kind": "building_block",
+      "category": "modal"
+    },
+    {
+      "id": "p057",
+      "order": 57,
+      "cyrillic": "Мне нужно...",
+      "romanization": "mne nuzhno...",
+      "english": "I need...",
+      "kind": "conversation_chunk",
+      "category": "need"
+    },
+    {
+      "id": "p058",
+      "order": 58,
+      "cyrillic": "Можно...?",
+      "romanization": "mozhno...?",
+      "english": "may I / is it possible...?",
+      "kind": "conversation_chunk",
+      "category": "request"
+    },
+    {
+      "id": "p059",
+      "order": 59,
+      "cyrillic": "До завтра",
+      "romanization": "do zavtra",
+      "english": "see you tomorrow",
+      "kind": "conversation_chunk",
+      "category": "social"
+    },
+    {
+      "id": "p060",
+      "order": 60,
+      "cyrillic": "Да, конечно",
+      "romanization": "da, konechno",
+      "english": "yes, of course",
+      "kind": "conversation_chunk",
+      "category": "response"
+    },
+    {
+      "id": "p061",
+      "order": 61,
+      "cyrillic": "Надо",
+      "romanization": "nado",
+      "english": "need to / have to",
+      "kind": "building_block",
+      "category": "modal"
+    },
+    {
+      "id": "p062",
+      "order": 62,
+      "cyrillic": "Есть",
+      "romanization": "yest",
+      "english": "there is / have; also 'to eat' in another use",
+      "kind": "building_block",
+      "category": "verb"
+    },
+    {
+      "id": "p063",
+      "order": 63,
+      "cyrillic": "Быть",
+      "romanization": "byt",
+      "english": "to be",
+      "kind": "building_block",
+      "category": "verb"
+    },
+    {
+      "id": "p064",
+      "order": 64,
+      "cyrillic": "Делать",
+      "romanization": "delat",
+      "english": "to do / make",
+      "kind": "building_block",
+      "category": "verb"
+    },
+    {
+      "id": "p065",
+      "order": 65,
+      "cyrillic": "Знать",
+      "romanization": "znat",
+      "english": "to know",
+      "kind": "building_block",
+      "category": "verb"
+    },
+    {
+      "id": "p066",
+      "order": 66,
+      "cyrillic": "Понимать",
+      "romanization": "ponimat",
+      "english": "to understand",
+      "kind": "building_block",
+      "category": "verb"
+    },
+    {
+      "id": "p067",
+      "order": 67,
+      "cyrillic": "Я хочу...",
+      "romanization": "ya khochu...",
+      "english": "I want...",
+      "kind": "conversation_chunk",
+      "category": "want"
+    },
+    {
+      "id": "p068",
+      "order": 68,
+      "cyrillic": "У меня есть...",
+      "romanization": "u menya yest...",
+      "english": "I have...",
+      "kind": "conversation_chunk",
+      "category": "possession"
+    },
+    {
+      "id": "p069",
+      "order": 69,
+      "cyrillic": "У меня нет...",
+      "romanization": "u menya net...",
+      "english": "I don't have...",
+      "kind": "conversation_chunk",
+      "category": "possession"
+    },
+    {
+      "id": "p070",
+      "order": 70,
+      "cyrillic": "Мне нравится...",
+      "romanization": "mne nravitsya...",
+      "english": "I like...",
+      "kind": "conversation_chunk",
+      "category": "preference"
+    },
+    {
+      "id": "p071",
+      "order": 71,
+      "cyrillic": "Говорить",
+      "romanization": "govorit",
+      "english": "to speak",
+      "kind": "building_block",
+      "category": "verb"
+    },
+    {
+      "id": "p072",
+      "order": 72,
+      "cyrillic": "Хотеть",
+      "romanization": "khotet",
+      "english": "to want",
+      "kind": "building_block",
+      "category": "verb"
+    },
+    {
+      "id": "p073",
+      "order": 73,
+      "cyrillic": "Мочь",
+      "romanization": "moch",
+      "english": "can / to be able",
+      "kind": "building_block",
+      "category": "verb"
+    },
+    {
+      "id": "p074",
+      "order": 74,
+      "cyrillic": "Идти",
+      "romanization": "idti",
+      "english": "to go on foot",
+      "kind": "building_block",
+      "category": "verb"
+    },
+    {
+      "id": "p075",
+      "order": 75,
+      "cyrillic": "Ехать",
+      "romanization": "yekhat",
+      "english": "to go by transport",
+      "kind": "building_block",
+      "category": "verb"
+    },
+    {
+      "id": "p076",
+      "order": 76,
+      "cyrillic": "Жить",
+      "romanization": "zhit",
+      "english": "to live",
+      "kind": "building_block",
+      "category": "verb"
+    },
+    {
+      "id": "p077",
+      "order": 77,
+      "cyrillic": "Повторите, пожалуйста",
+      "romanization": "povtorite, pozhaluysta",
+      "english": "repeat, please",
+      "kind": "conversation_chunk",
+      "category": "survival"
+    },
+    {
+      "id": "p078",
+      "order": 78,
+      "cyrillic": "Говорите медленнее, пожалуйста",
+      "romanization": "govorite medlenneye, pozhaluysta",
+      "english": "speak more slowly, please",
+      "kind": "conversation_chunk",
+      "category": "survival"
+    },
+    {
+      "id": "p079",
+      "order": 79,
+      "cyrillic": "Как сказать... по-русски?",
+      "romanization": "kak skazat... po-russki?",
+      "english": "how do you say... in Russian?",
+      "kind": "conversation_chunk",
+      "category": "learning"
+    },
+    {
+      "id": "p080",
+      "order": 80,
+      "cyrillic": "Вы говорите по-английски?",
+      "romanization": "vy govorite po-angliyski?",
+      "english": "do you speak English?",
+      "kind": "conversation_chunk",
+      "category": "survival"
+    },
+    {
+      "id": "p081",
+      "order": 81,
+      "cyrillic": "Работать",
+      "romanization": "rabotat",
+      "english": "to work",
+      "kind": "building_block",
+      "category": "verb"
+    },
+    {
+      "id": "p082",
+      "order": 82,
+      "cyrillic": "Любить",
+      "romanization": "lyubit",
+      "english": "to love / like",
+      "kind": "building_block",
+      "category": "verb"
+    },
+    {
+      "id": "p083",
+      "order": 83,
+      "cyrillic": "Видеть",
+      "romanization": "videt",
+      "english": "to see",
+      "kind": "building_block",
+      "category": "verb"
+    },
+    {
+      "id": "p084",
+      "order": 84,
+      "cyrillic": "В",
+      "romanization": "v",
+      "english": "in / into",
+      "kind": "building_block",
+      "category": "preposition"
+    },
+    {
+      "id": "p085",
+      "order": 85,
+      "cyrillic": "На",
+      "romanization": "na",
+      "english": "on / at / to",
+      "kind": "building_block",
+      "category": "preposition"
+    },
+    {
+      "id": "p086",
+      "order": 86,
+      "cyrillic": "С",
+      "romanization": "s",
+      "english": "with / from",
+      "kind": "building_block",
+      "category": "preposition"
+    },
+    {
+      "id": "p087",
+      "order": 87,
+      "cyrillic": "Я работаю...",
+      "romanization": "ya rabotayu...",
+      "english": "I work...",
+      "kind": "conversation_chunk",
+      "category": "personal"
+    },
+    {
+      "id": "p088",
+      "order": 88,
+      "cyrillic": "Я живу...",
+      "romanization": "ya zhivu...",
+      "english": "I live...",
+      "kind": "conversation_chunk",
+      "category": "personal"
+    },
+    {
+      "id": "p089",
+      "order": 89,
+      "cyrillic": "Я люблю...",
+      "romanization": "ya lyublyu...",
+      "english": "I love / like...",
+      "kind": "conversation_chunk",
+      "category": "preference"
+    },
+    {
+      "id": "p090",
+      "order": 90,
+      "cyrillic": "Я думаю...",
+      "romanization": "ya dumayu...",
+      "english": "I think...",
+      "kind": "conversation_chunk",
+      "category": "opinion"
+    },
+    {
+      "id": "p091",
+      "order": 91,
+      "cyrillic": "У",
+      "romanization": "u",
+      "english": "at / by; used in possession patterns",
+      "kind": "building_block",
+      "category": "preposition"
+    },
+    {
+      "id": "p092",
+      "order": 92,
+      "cyrillic": "К",
+      "romanization": "k",
+      "english": "to / toward",
+      "kind": "building_block",
+      "category": "preposition"
+    },
+    {
+      "id": "p093",
+      "order": 93,
+      "cyrillic": "Из",
+      "romanization": "iz",
+      "english": "from / out of",
+      "kind": "building_block",
+      "category": "preposition"
+    },
+    {
+      "id": "p094",
+      "order": 94,
+      "cyrillic": "По",
+      "romanization": "po",
+      "english": "along / by / in; common in fixed phrases",
+      "kind": "building_block",
+      "category": "preposition"
+    },
+    {
+      "id": "p095",
+      "order": 95,
+      "cyrillic": "От",
+      "romanization": "ot",
+      "english": "from / away from",
+      "kind": "building_block",
+      "category": "preposition"
+    },
+    {
+      "id": "p096",
+      "order": 96,
+      "cyrillic": "Для",
+      "romanization": "dlya",
+      "english": "for",
+      "kind": "building_block",
+      "category": "preposition"
+    },
+    {
+      "id": "p097",
+      "order": 97,
+      "cyrillic": "До свидания",
+      "romanization": "do svidaniya",
+      "english": "goodbye",
+      "kind": "conversation_chunk",
+      "category": "social"
+    },
+    {
+      "id": "p098",
+      "order": 98,
+      "cyrillic": "Извините",
+      "romanization": "izvinite",
+      "english": "excuse me / sorry",
+      "kind": "conversation_chunk",
+      "category": "social"
+    },
+    {
+      "id": "p099",
+      "order": 99,
+      "cyrillic": "Пожалуйста",
+      "romanization": "pozhaluysta",
+      "english": "please / you're welcome",
+      "kind": "conversation_chunk",
+      "category": "social"
+    },
+    {
+      "id": "p100",
+      "order": 100,
+      "cyrillic": "Сколько стоит?",
+      "romanization": "skolko stoit?",
+      "english": "how much does it cost?",
+      "kind": "conversation_chunk",
+      "category": "practical"
+    }
+  ]
+}

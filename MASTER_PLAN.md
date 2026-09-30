@@ -17,6 +17,16 @@
 - [x] Add Russian course content directory
 - [x] Add local dev commands
 
+## Task 2 — Pareto learning layer
+- [x] Define a Pareto-inspired selection policy without claiming a literal corpus top-100
+- [x] Create a 100-item Stage 1 bank: 65 building blocks + 35 conversational chunks
+- [x] Split Stage 1 into ten 10-item micro-sessions
+- [x] Add active-recall, speaking, recombination and romanization-fade rules
+- [x] Add Stage 1/session API endpoints
+- [x] Add 80% recognition / 70% production mastery-gate logic
+- [ ] Persist per-item attempts and use them to unlock sessions automatically
+- [ ] Feed weak/new items into FSRS review
+
 ## Phase 2 — Onboarding and planner
 - [ ] Collect target date, study days, minutes/day or hours/week
 - [ ] Add Relaxed, Standard, Intensive, and Custom plans

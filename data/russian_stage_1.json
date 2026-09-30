@@ -2,7 +2,7 @@
   "language": "Russian",
   "level": "Stage 1",
   "title": "100 Essential Everyday Words & Expressions",
-  "approach": "Romanization-first bridge with Cyrillic visible from day one",
+  "approach": "Pronunciation-first bridge with Cyrillic visible from day one",
   "mastery_target": {
     "recognition_percent": 80,
     "production_percent": 70
@@ -12,701 +12,806 @@
       "id": 1,
       "group": "greetings_social",
       "cyrillic": "Привет",
-      "romanization": "privet",
-      "english": "hi / hello"
+      "english": "hi / hello",
+      "transliteration": "privet",
+      "pronunciation": "pree-VYET"
     },
     {
       "id": 2,
       "group": "greetings_social",
       "cyrillic": "Здравствуйте",
-      "romanization": "zdravstvuyte",
-      "english": "hello (formal)"
+      "english": "hello (formal)",
+      "transliteration": "zdravstvuyte",
+      "pronunciation": "ZDRAST-vuy-tye"
     },
     {
       "id": 3,
       "group": "greetings_social",
       "cyrillic": "Доброе утро",
-      "romanization": "dobroye utro",
-      "english": "good morning"
+      "english": "good morning",
+      "transliteration": "dobroye utro",
+      "pronunciation": "DOH-bra-ye OO-tra"
     },
     {
       "id": 4,
       "group": "greetings_social",
       "cyrillic": "Добрый день",
-      "romanization": "dobryy den",
-      "english": "good afternoon"
+      "english": "good afternoon",
+      "transliteration": "dobryy den",
+      "pronunciation": "DOH-briy dyen'"
     },
     {
       "id": 5,
       "group": "greetings_social",
       "cyrillic": "Добрый вечер",
-      "romanization": "dobryy vecher",
-      "english": "good evening"
+      "english": "good evening",
+      "transliteration": "dobryy vecher",
+      "pronunciation": "DOH-briy VYE-cher"
     },
     {
       "id": 6,
       "group": "greetings_social",
       "cyrillic": "Пока",
-      "romanization": "poka",
-      "english": "bye"
+      "english": "bye",
+      "transliteration": "poka",
+      "pronunciation": "pa-KA"
     },
     {
       "id": 7,
       "group": "greetings_social",
       "cyrillic": "До свидания",
-      "romanization": "do svidaniya",
-      "english": "goodbye"
+      "english": "goodbye",
+      "transliteration": "do svidaniya",
+      "pronunciation": "da svi-DA-ni-ya"
     },
     {
       "id": 8,
       "group": "greetings_social",
       "cyrillic": "Как дела?",
-      "romanization": "kak dela?",
-      "english": "how are you?"
+      "english": "how are you?",
+      "transliteration": "kak dela?",
+      "pronunciation": "kak di-LA?"
     },
     {
       "id": 9,
       "group": "greetings_social",
       "cyrillic": "Хорошо",
-      "romanization": "khorosho",
-      "english": "good / well"
+      "english": "good / well",
+      "transliteration": "khorosho",
+      "pronunciation": "kha-ra-SHO"
     },
     {
       "id": 10,
       "group": "greetings_social",
       "cyrillic": "Нормально",
-      "romanization": "normalno",
-      "english": "okay / fine"
+      "english": "okay / fine",
+      "transliteration": "normalno",
+      "pronunciation": "nar-MAL-na"
     },
     {
       "id": 11,
       "group": "politeness_survival",
       "cyrillic": "Спасибо",
-      "romanization": "spasibo",
-      "english": "thank you"
+      "english": "thank you",
+      "transliteration": "spasibo",
+      "pronunciation": "spa-SEE-ba"
     },
     {
       "id": 12,
       "group": "politeness_survival",
       "cyrillic": "Пожалуйста",
-      "romanization": "pozhaluysta",
-      "english": "please / you're welcome"
+      "english": "please / you're welcome",
+      "transliteration": "pozhaluysta",
+      "pronunciation": "pa-ZHA-lus-ta"
     },
     {
       "id": 13,
       "group": "politeness_survival",
       "cyrillic": "Извините",
-      "romanization": "izvinite",
-      "english": "excuse me / sorry (formal)"
+      "english": "excuse me / sorry (formal)",
+      "transliteration": "izvinite",
+      "pronunciation": "iz-vi-NEE-tye"
     },
     {
       "id": 14,
       "group": "politeness_survival",
       "cyrillic": "Прости",
-      "romanization": "prosti",
-      "english": "sorry / forgive me (informal)"
+      "english": "sorry / forgive me (informal)",
+      "transliteration": "prosti",
+      "pronunciation": "pras-TEE"
     },
     {
       "id": 15,
       "group": "politeness_survival",
       "cyrillic": "Да",
-      "romanization": "da",
-      "english": "yes"
+      "english": "yes",
+      "transliteration": "da",
+      "pronunciation": "da"
     },
     {
       "id": 16,
       "group": "politeness_survival",
       "cyrillic": "Нет",
-      "romanization": "net",
-      "english": "no"
+      "english": "no",
+      "transliteration": "net",
+      "pronunciation": "nyet"
     },
     {
       "id": 17,
       "group": "politeness_survival",
       "cyrillic": "Может быть",
-      "romanization": "mozhet byt",
-      "english": "maybe"
+      "english": "maybe",
+      "transliteration": "mozhet byt",
+      "pronunciation": "MO-zhet byt'"
     },
     {
       "id": 18,
       "group": "politeness_survival",
       "cyrillic": "Конечно",
-      "romanization": "konechno",
-      "english": "of course"
+      "english": "of course",
+      "transliteration": "konechno",
+      "pronunciation": "ka-NYESH-na"
     },
     {
       "id": 19,
       "group": "politeness_survival",
       "cyrillic": "Я понимаю",
-      "romanization": "ya ponimayu",
-      "english": "I understand"
+      "english": "I understand",
+      "transliteration": "ya ponimayu",
+      "pronunciation": "ya pa-ni-MA-yu"
     },
     {
       "id": 20,
       "group": "politeness_survival",
       "cyrillic": "Я не понимаю",
-      "romanization": "ya ne ponimayu",
-      "english": "I don't understand"
+      "english": "I don't understand",
+      "transliteration": "ya ne ponimayu",
+      "pronunciation": "ya ni pa-ni-MA-yu"
     },
     {
       "id": 21,
       "group": "people_pronouns",
       "cyrillic": "Я",
-      "romanization": "ya",
-      "english": "I"
+      "english": "I",
+      "transliteration": "ya",
+      "pronunciation": "ya"
     },
     {
       "id": 22,
       "group": "people_pronouns",
       "cyrillic": "Ты",
-      "romanization": "ty",
-      "english": "you (informal)"
+      "english": "you (informal)",
+      "transliteration": "ty",
+      "pronunciation": "ty"
     },
     {
       "id": 23,
       "group": "people_pronouns",
       "cyrillic": "Вы",
-      "romanization": "vy",
-      "english": "you (formal/plural)"
+      "english": "you (formal/plural)",
+      "transliteration": "vy",
+      "pronunciation": "vy"
     },
     {
       "id": 24,
       "group": "people_pronouns",
       "cyrillic": "Он",
-      "romanization": "on",
-      "english": "he"
+      "english": "he",
+      "transliteration": "on",
+      "pronunciation": "on"
     },
     {
       "id": 25,
       "group": "people_pronouns",
       "cyrillic": "Она",
-      "romanization": "ona",
-      "english": "she"
+      "english": "she",
+      "transliteration": "ona",
+      "pronunciation": "a-NA"
     },
     {
       "id": 26,
       "group": "people_pronouns",
       "cyrillic": "Мы",
-      "romanization": "my",
-      "english": "we"
+      "english": "we",
+      "transliteration": "my",
+      "pronunciation": "my"
     },
     {
       "id": 27,
       "group": "people_pronouns",
       "cyrillic": "Они",
-      "romanization": "oni",
-      "english": "they"
+      "english": "they",
+      "transliteration": "oni",
+      "pronunciation": "a-NEE"
     },
     {
       "id": 28,
       "group": "people_pronouns",
       "cyrillic": "Друг",
-      "romanization": "drug",
-      "english": "friend (male)"
+      "english": "friend (male)",
+      "transliteration": "drug",
+      "pronunciation": "drook"
     },
     {
       "id": 29,
       "group": "people_pronouns",
       "cyrillic": "Подруга",
-      "romanization": "podruga",
-      "english": "friend (female)"
+      "english": "friend (female)",
+      "transliteration": "podruga",
+      "pronunciation": "pa-DOO-ga"
     },
     {
       "id": 30,
       "group": "people_pronouns",
       "cyrillic": "Семья",
-      "romanization": "semya",
-      "english": "family"
+      "english": "family",
+      "transliteration": "semya",
+      "pronunciation": "sim-YA"
     },
     {
       "id": 31,
       "group": "question_words",
       "cyrillic": "Кто?",
-      "romanization": "kto?",
-      "english": "who?"
+      "english": "who?",
+      "transliteration": "kto?",
+      "pronunciation": "kto?"
     },
     {
       "id": 32,
       "group": "question_words",
       "cyrillic": "Что?",
-      "romanization": "chto?",
-      "english": "what?"
+      "english": "what?",
+      "transliteration": "chto?",
+      "pronunciation": "shto?"
     },
     {
       "id": 33,
       "group": "question_words",
       "cyrillic": "Где?",
-      "romanization": "gde?",
-      "english": "where?"
+      "english": "where?",
+      "transliteration": "gde?",
+      "pronunciation": "gdye?"
     },
     {
       "id": 34,
       "group": "question_words",
       "cyrillic": "Когда?",
-      "romanization": "kogda?",
-      "english": "when?"
+      "english": "when?",
+      "transliteration": "kogda?",
+      "pronunciation": "kag-DA?"
     },
     {
       "id": 35,
       "group": "question_words",
       "cyrillic": "Почему?",
-      "romanization": "pochemu?",
-      "english": "why?"
+      "english": "why?",
+      "transliteration": "pochemu?",
+      "pronunciation": "pa-chi-MOO?"
     },
     {
       "id": 36,
       "group": "question_words",
       "cyrillic": "Как?",
-      "romanization": "kak?",
-      "english": "how?"
+      "english": "how?",
+      "transliteration": "kak?",
+      "pronunciation": "kak?"
     },
     {
       "id": 37,
       "group": "question_words",
       "cyrillic": "Какой?",
-      "romanization": "kakoy?",
-      "english": "which? / what kind?"
+      "english": "which? / what kind?",
+      "transliteration": "kakoy?",
+      "pronunciation": "ka-KOY?"
     },
     {
       "id": 38,
       "group": "question_words",
       "cyrillic": "Сколько?",
-      "romanization": "skolko?",
-      "english": "how much? / how many?"
+      "english": "how much? / how many?",
+      "transliteration": "skolko?",
+      "pronunciation": "SKOL-ka?"
     },
     {
       "id": 39,
       "group": "question_words",
       "cyrillic": "Куда?",
-      "romanization": "kuda?",
-      "english": "where to?"
+      "english": "where to?",
+      "transliteration": "kuda?",
+      "pronunciation": "koo-DA?"
     },
     {
       "id": 40,
       "group": "question_words",
       "cyrillic": "Откуда?",
-      "romanization": "otkuda?",
-      "english": "where from?"
+      "english": "where from?",
+      "transliteration": "otkuda?",
+      "pronunciation": "at-KOO-da?"
     },
     {
       "id": 41,
       "group": "core_verbs",
       "cyrillic": "Быть",
-      "romanization": "byt",
-      "english": "to be"
+      "english": "to be",
+      "transliteration": "byt",
+      "pronunciation": "byt'"
     },
     {
       "id": 42,
       "group": "core_verbs",
       "cyrillic": "Есть",
-      "romanization": "yest",
-      "english": "to eat / there is"
+      "english": "to eat / there is",
+      "transliteration": "yest",
+      "pronunciation": "yest'"
     },
     {
       "id": 43,
       "group": "core_verbs",
       "cyrillic": "Иметь",
-      "romanization": "imet",
-      "english": "to have"
+      "english": "to have",
+      "transliteration": "imet",
+      "pronunciation": "i-MYET'"
     },
     {
       "id": 44,
       "group": "core_verbs",
       "cyrillic": "Хотеть",
-      "romanization": "khotet",
-      "english": "to want"
+      "english": "to want",
+      "transliteration": "khotet",
+      "pronunciation": "kha-TYET'"
     },
     {
       "id": 45,
       "group": "core_verbs",
       "cyrillic": "Мочь",
-      "romanization": "moch",
-      "english": "can / to be able"
+      "english": "can / to be able",
+      "transliteration": "moch",
+      "pronunciation": "moch'"
     },
     {
       "id": 46,
       "group": "core_verbs",
       "cyrillic": "Знать",
-      "romanization": "znat",
-      "english": "to know"
+      "english": "to know",
+      "transliteration": "znat",
+      "pronunciation": "znat'"
     },
     {
       "id": 47,
       "group": "core_verbs",
       "cyrillic": "Понимать",
-      "romanization": "ponimat",
-      "english": "to understand"
+      "english": "to understand",
+      "transliteration": "ponimat",
+      "pronunciation": "pa-ni-MAT'"
     },
     {
       "id": 48,
       "group": "core_verbs",
       "cyrillic": "Говорить",
-      "romanization": "govorit",
-      "english": "to speak"
+      "english": "to speak",
+      "transliteration": "govorit",
+      "pronunciation": "ga-va-REET'"
     },
     {
       "id": 49,
       "group": "core_verbs",
       "cyrillic": "Делать",
-      "romanization": "delat",
-      "english": "to do / make"
+      "english": "to do / make",
+      "transliteration": "delat",
+      "pronunciation": "DYE-lat'"
     },
     {
       "id": 50,
       "group": "core_verbs",
       "cyrillic": "Идти",
-      "romanization": "idti",
-      "english": "to go / walk"
+      "english": "to go / walk",
+      "transliteration": "idti",
+      "pronunciation": "it-TEE"
     },
     {
       "id": 51,
-      "group": "time_frequency",
+      "group": "core_verbs",
       "cyrillic": "Ехать",
-      "romanization": "yekhat",
-      "english": "to go by transport"
+      "english": "to go by transport",
+      "transliteration": "yekhat",
+      "pronunciation": "YEH-khat'"
     },
     {
       "id": 52,
-      "group": "time_frequency",
+      "group": "core_verbs",
       "cyrillic": "Жить",
-      "romanization": "zhit",
-      "english": "to live"
+      "english": "to live",
+      "transliteration": "zhit",
+      "pronunciation": "zhyt'"
     },
     {
       "id": 53,
-      "group": "time_frequency",
+      "group": "core_verbs",
       "cyrillic": "Работать",
-      "romanization": "rabotat",
-      "english": "to work"
+      "english": "to work",
+      "transliteration": "rabotat",
+      "pronunciation": "ra-BO-tat'"
     },
     {
       "id": 54,
-      "group": "time_frequency",
+      "group": "core_verbs",
       "cyrillic": "Смотреть",
-      "romanization": "smotret",
-      "english": "to look / watch"
+      "english": "to look / watch",
+      "transliteration": "smotret",
+      "pronunciation": "sma-TRYET'"
     },
     {
       "id": 55,
-      "group": "time_frequency",
+      "group": "core_verbs",
       "cyrillic": "Любить",
-      "romanization": "lyubit",
-      "english": "to love / like"
+      "english": "to love / like",
+      "transliteration": "lyubit",
+      "pronunciation": "lyu-BEET'"
     },
     {
       "id": 56,
       "group": "time_frequency",
       "cyrillic": "Сейчас",
-      "romanization": "seychas",
-      "english": "now"
+      "english": "now",
+      "transliteration": "seychas",
+      "pronunciation": "si-CHAS"
     },
     {
       "id": 57,
       "group": "time_frequency",
       "cyrillic": "Сегодня",
-      "romanization": "segodnya",
-      "english": "today"
+      "english": "today",
+      "transliteration": "segodnya",
+      "pronunciation": "si-VOD-nya"
     },
     {
       "id": 58,
       "group": "time_frequency",
       "cyrillic": "Завтра",
-      "romanization": "zavtra",
-      "english": "tomorrow"
+      "english": "tomorrow",
+      "transliteration": "zavtra",
+      "pronunciation": "ZAF-tra"
     },
     {
       "id": 59,
       "group": "time_frequency",
       "cyrillic": "Вчера",
-      "romanization": "vchera",
-      "english": "yesterday"
+      "english": "yesterday",
+      "transliteration": "vchera",
+      "pronunciation": "fchi-RA"
     },
     {
       "id": 60,
       "group": "time_frequency",
       "cyrillic": "Утро",
-      "romanization": "utro",
-      "english": "morning"
+      "english": "morning",
+      "transliteration": "utro",
+      "pronunciation": "OO-tra"
     },
     {
       "id": 61,
-      "group": "places_directions",
+      "group": "time_frequency",
       "cyrillic": "День",
-      "romanization": "den",
-      "english": "day"
+      "english": "day",
+      "transliteration": "den",
+      "pronunciation": "dyen'"
     },
     {
       "id": 62,
-      "group": "places_directions",
+      "group": "time_frequency",
       "cyrillic": "Вечер",
-      "romanization": "vecher",
-      "english": "evening"
+      "english": "evening",
+      "transliteration": "vecher",
+      "pronunciation": "VYE-cher"
     },
     {
       "id": 63,
-      "group": "places_directions",
+      "group": "time_frequency",
       "cyrillic": "Ночь",
-      "romanization": "noch",
-      "english": "night"
+      "english": "night",
+      "transliteration": "noch",
+      "pronunciation": "noch'"
     },
     {
       "id": 64,
-      "group": "places_directions",
+      "group": "time_frequency",
       "cyrillic": "Всегда",
-      "romanization": "vsegda",
-      "english": "always"
+      "english": "always",
+      "transliteration": "vsegda",
+      "pronunciation": "fsee-GDA"
     },
     {
       "id": 65,
-      "group": "places_directions",
+      "group": "time_frequency",
       "cyrillic": "Иногда",
-      "romanization": "inogda",
-      "english": "sometimes"
+      "english": "sometimes",
+      "transliteration": "inogda",
+      "pronunciation": "in-ag-DA"
     },
     {
       "id": 66,
       "group": "places_directions",
       "cyrillic": "Дом",
-      "romanization": "dom",
-      "english": "home / house"
+      "english": "home / house",
+      "transliteration": "dom",
+      "pronunciation": "dom"
     },
     {
       "id": 67,
       "group": "places_directions",
       "cyrillic": "Работа",
-      "romanization": "rabota",
-      "english": "work"
+      "english": "work",
+      "transliteration": "rabota",
+      "pronunciation": "ra-BO-ta"
     },
     {
       "id": 68,
       "group": "places_directions",
       "cyrillic": "Магазин",
-      "romanization": "magazin",
-      "english": "store"
+      "english": "store",
+      "transliteration": "magazin",
+      "pronunciation": "ma-ga-ZEEN"
     },
     {
       "id": 69,
       "group": "places_directions",
       "cyrillic": "Ресторан",
-      "romanization": "restoran",
-      "english": "restaurant"
+      "english": "restaurant",
+      "transliteration": "restoran",
+      "pronunciation": "ris-ta-RAN"
     },
     {
       "id": 70,
       "group": "places_directions",
       "cyrillic": "Туалет",
-      "romanization": "tualet",
-      "english": "toilet / restroom"
+      "english": "toilet / restroom",
+      "transliteration": "tualet",
+      "pronunciation": "too-a-LYET"
     },
     {
       "id": 71,
-      "group": "food_needs",
+      "group": "places_directions",
       "cyrillic": "Здесь",
-      "romanization": "zdes",
-      "english": "here"
+      "english": "here",
+      "transliteration": "zdes",
+      "pronunciation": "zdyes'"
     },
     {
       "id": 72,
-      "group": "food_needs",
+      "group": "places_directions",
       "cyrillic": "Там",
-      "romanization": "tam",
-      "english": "there"
+      "english": "there",
+      "transliteration": "tam",
+      "pronunciation": "tam"
     },
     {
       "id": 73,
-      "group": "food_needs",
+      "group": "places_directions",
       "cyrillic": "Прямо",
-      "romanization": "pryamo",
-      "english": "straight ahead"
+      "english": "straight ahead",
+      "transliteration": "pryamo",
+      "pronunciation": "PRYA-ma"
     },
     {
       "id": 74,
-      "group": "food_needs",
+      "group": "places_directions",
       "cyrillic": "Налево",
-      "romanization": "nalevo",
-      "english": "to the left"
+      "english": "to the left",
+      "transliteration": "nalevo",
+      "pronunciation": "na-LYE-va"
     },
     {
       "id": 75,
-      "group": "food_needs",
+      "group": "places_directions",
       "cyrillic": "Направо",
-      "romanization": "napravo",
-      "english": "to the right"
+      "english": "to the right",
+      "transliteration": "napravo",
+      "pronunciation": "na-PRA-va"
     },
     {
       "id": 76,
       "group": "food_needs",
       "cyrillic": "Вода",
-      "romanization": "voda",
-      "english": "water"
+      "english": "water",
+      "transliteration": "voda",
+      "pronunciation": "va-DA"
     },
     {
       "id": 77,
       "group": "food_needs",
       "cyrillic": "Еда",
-      "romanization": "yeda",
-      "english": "food"
+      "english": "food",
+      "transliteration": "yeda",
+      "pronunciation": "yi-DA"
     },
     {
       "id": 78,
       "group": "food_needs",
       "cyrillic": "Кофе",
-      "romanization": "kofe",
-      "english": "coffee"
+      "english": "coffee",
+      "transliteration": "kofe",
+      "pronunciation": "KO-fe"
     },
     {
       "id": 79,
       "group": "food_needs",
       "cyrillic": "Чай",
-      "romanization": "chay",
-      "english": "tea"
+      "english": "tea",
+      "transliteration": "chay",
+      "pronunciation": "chai"
     },
     {
       "id": 80,
       "group": "food_needs",
       "cyrillic": "Хлеб",
-      "romanization": "khleb",
-      "english": "bread"
+      "english": "bread",
+      "transliteration": "khleb",
+      "pronunciation": "khlyep"
     },
     {
       "id": 81,
-      "group": "descriptions_connectors",
+      "group": "food_needs",
       "cyrillic": "Мясо",
-      "romanization": "myaso",
-      "english": "meat"
+      "english": "meat",
+      "transliteration": "myaso",
+      "pronunciation": "MYA-sa"
     },
     {
       "id": 82,
-      "group": "descriptions_connectors",
+      "group": "food_needs",
       "cyrillic": "Деньги",
-      "romanization": "dengi",
-      "english": "money"
+      "english": "money",
+      "transliteration": "dengi",
+      "pronunciation": "DYEN-gee"
     },
     {
       "id": 83,
-      "group": "descriptions_connectors",
+      "group": "food_needs",
       "cyrillic": "Помощь",
-      "romanization": "pomoshch",
-      "english": "help"
+      "english": "help",
+      "transliteration": "pomoshch",
+      "pronunciation": "PO-mashch'"
     },
     {
       "id": 84,
-      "group": "descriptions_connectors",
+      "group": "food_needs",
       "cyrillic": "Мне нужно...",
-      "romanization": "mne nuzhno...",
-      "english": "I need..."
+      "english": "I need...",
+      "transliteration": "mne nuzhno...",
+      "pronunciation": "mnye NOOZH-na..."
     },
     {
       "id": 85,
-      "group": "descriptions_connectors",
+      "group": "food_needs",
       "cyrillic": "Я хочу...",
-      "romanization": "ya khochu...",
-      "english": "I want..."
+      "english": "I want...",
+      "transliteration": "ya khochu...",
+      "pronunciation": "ya kha-CHOO..."
     },
     {
       "id": 86,
       "group": "descriptions_connectors",
       "cyrillic": "Хороший",
-      "romanization": "khoroshiy",
-      "english": "good"
+      "english": "good",
+      "transliteration": "khoroshiy",
+      "pronunciation": "kha-RO-shiy"
     },
     {
       "id": 87,
       "group": "descriptions_connectors",
       "cyrillic": "Плохой",
-      "romanization": "plokhoy",
-      "english": "bad"
+      "english": "bad",
+      "transliteration": "plokhoy",
+      "pronunciation": "pla-KHOY"
     },
     {
       "id": 88,
       "group": "descriptions_connectors",
       "cyrillic": "Большой",
-      "romanization": "bolshoy",
-      "english": "big"
+      "english": "big",
+      "transliteration": "bolshoy",
+      "pronunciation": "bal-SHOY"
     },
     {
       "id": 89,
       "group": "descriptions_connectors",
       "cyrillic": "Маленький",
-      "romanization": "malenkiy",
-      "english": "small"
+      "english": "small",
+      "transliteration": "malenkiy",
+      "pronunciation": "MA-lin'-kiy"
     },
     {
       "id": 90,
       "group": "descriptions_connectors",
       "cyrillic": "Новый",
-      "romanization": "novyy",
-      "english": "new"
+      "english": "new",
+      "transliteration": "novyy",
+      "pronunciation": "NO-viy"
     },
     {
       "id": 91,
-      "group": "everyday_expressions",
+      "group": "descriptions_connectors",
       "cyrillic": "Старый",
-      "romanization": "staryy",
-      "english": "old"
+      "english": "old",
+      "transliteration": "staryy",
+      "pronunciation": "STA-riy"
     },
     {
       "id": 92,
-      "group": "everyday_expressions",
+      "group": "descriptions_connectors",
       "cyrillic": "И",
-      "romanization": "i",
-      "english": "and"
+      "english": "and",
+      "transliteration": "i",
+      "pronunciation": "ee"
     },
     {
       "id": 93,
-      "group": "everyday_expressions",
+      "group": "descriptions_connectors",
       "cyrillic": "Но",
-      "romanization": "no",
-      "english": "but"
+      "english": "but",
+      "transliteration": "no",
+      "pronunciation": "no"
     },
     {
       "id": 94,
-      "group": "everyday_expressions",
+      "group": "descriptions_connectors",
       "cyrillic": "Потому что",
-      "romanization": "potomu chto",
-      "english": "because"
+      "english": "because",
+      "transliteration": "potomu chto",
+      "pronunciation": "pa-ta-MOO shto"
     },
     {
       "id": 95,
-      "group": "everyday_expressions",
+      "group": "descriptions_connectors",
       "cyrillic": "Очень",
-      "romanization": "ochen",
-      "english": "very"
+      "english": "very",
+      "transliteration": "ochen",
+      "pronunciation": "O-chin'"
     },
     {
       "id": 96,
       "group": "everyday_expressions",
       "cyrillic": "Меня зовут...",
-      "romanization": "menya zovut...",
-      "english": "my name is..."
+      "english": "my name is...",
+      "transliteration": "menya zovut...",
+      "pronunciation": "mi-NYA za-VOOT..."
     },
     {
       "id": 97,
       "group": "everyday_expressions",
       "cyrillic": "Я из...",
-      "romanization": "ya iz...",
-      "english": "I'm from..."
+      "english": "I'm from...",
+      "transliteration": "ya iz...",
+      "pronunciation": "ya iz..."
     },
     {
       "id": 98,
       "group": "everyday_expressions",
       "cyrillic": "Вы говорите по-английски?",
-      "romanization": "vy govorite po-angliyski?",
-      "english": "do you speak English?"
+      "english": "do you speak English?",
+      "transliteration": "vy govorite po-angliyski?",
+      "pronunciation": "vy ga-va-REE-tye pa ang-LEEY-ski?"
     },
     {
       "id": 99,
       "group": "everyday_expressions",
       "cyrillic": "Повторите, пожалуйста",
-      "romanization": "povtorite, pozhaluysta",
-      "english": "repeat, please"
+      "english": "repeat, please",
+      "transliteration": "povtorite, pozhaluysta",
+      "pronunciation": "paf-ta-REE-tye, pa-ZHA-lus-ta"
     },
     {
       "id": 100,
       "group": "everyday_expressions",
       "cyrillic": "Что это?",
-      "romanization": "chto eto?",
-      "english": "what is this?"
+      "english": "what is this?",
+      "transliteration": "chto eto?",
+      "pronunciation": "shto EH-ta?"
     }
-  ]
+  ],
+  "pronunciation_guide": {
+    "stress": "CAPITAL letters mark the stressed syllable",
+    "apostrophe": "An apostrophe after a consonant marks softness/palatalization, often caused by ь. The ь has no sound of its own.",
+    "note": "These are learner-friendly pronunciation cues, not strict letter-by-letter transliterations or IPA."
+  }
 }

@@ -8,8 +8,9 @@ from pydantic import BaseModel, Field
 
 from .config import settings
 from .content import stage_1_session, stage_1_summary
-from .db import init_db
+from .db import get_settings, init_db, save_settings
 from .pareto import mastery_status
+from .planner import build_plan
 
 
 @asynccontextmanager
@@ -19,8 +20,8 @@ async def lifespan(_: FastAPI):
 
 
 app = FastAPI(
-    title="A1 Voice Tutor API",
-    version="0.2.0",
+    title="Arova API",
+    version="0.3.0",
     lifespan=lifespan,
 )
 
@@ -38,9 +39,44 @@ class MasteryCheck(BaseModel):
     production_percent: float = Field(ge=0, le=100)
 
 
+class LearnerSettings(BaseModel):
+    language: str = "Russian"
+    target_level: str = "A1"
+    target_date: str | None = None
+    study_days: list[str] = []
+    minutes_per_day: int = Field(default=25, ge=5, le=240)
+    pace: str = Field(default="standard", pattern="^(relaxed|standard|intensive|custom)$")
+
+
 @app.get("/health")
 def health() -> dict[str, str]:
     return {"status": "ok", "environment": settings.app_env}
+
+
+@app.get("/api/profile")
+def profile() -> dict[str, object]:
+    stored = get_settings()
+    return {"configured": stored is not None, "profile": stored}
+
+
+@app.post("/api/profile")
+def update_profile(payload: LearnerSettings) -> dict[str, object]:
+    plan = build_plan(
+        target_date=payload.target_date,
+        study_days=payload.study_days,
+        minutes_per_day=payload.minutes_per_day,
+        pace=payload.pace,
+    )
+    stored = save_settings(
+        language=payload.language,
+        target_level=payload.target_level,
+        target_date=payload.target_date,
+        study_days=payload.study_days,
+        minutes_per_day=payload.minutes_per_day,
+        pace=payload.pace,
+        plan=plan,
+    )
+    return {"configured": True, "profile": stored}
 
 
 @app.get("/api/courses/ru-a1/stage-1")

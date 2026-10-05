@@ -12,40 +12,40 @@ export default function HomePage() {
   return (
     <main className="mx-auto min-h-screen max-w-xl px-5 py-8">
       <header className="mb-8">
-        <p className="text-sm font-semibold uppercase tracking-[0.18em] text-neutral-500">
-          Russian A1
-        </p>
+        <p className="text-sm font-semibold uppercase tracking-[0.18em] text-neutral-500">Russian A1</p>
         <h1 className="mt-2 text-4xl font-bold tracking-tight">Arova</h1>
         <p className="mt-3 text-base leading-7 text-neutral-700">
           Learn useful Russian, understand how it works, speak it, and keep it.
         </p>
       </header>
 
-      <section className="mb-8 rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm">
-        <p className="text-xs font-semibold uppercase tracking-[0.15em] text-neutral-500">
-          Continue learning
+      <section className="mb-5 rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm">
+        <p className="text-xs font-semibold uppercase tracking-[0.15em] text-neutral-500">Start here</p>
+        <h2 className="mt-2 text-xl font-semibold">Create your study plan</h2>
+        <p className="mt-2 text-sm leading-6 text-neutral-600">
+          Choose your schedule and target, then Arova will pace the 24-lesson course around you.
         </p>
+        <Link href="/onboarding" className="mt-4 inline-flex rounded-xl bg-neutral-900 px-4 py-2.5 text-sm font-semibold text-white">
+          Set up Arova
+        </Link>
+      </section>
+
+      <section className="mb-8 rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm">
+        <p className="text-xs font-semibold uppercase tracking-[0.15em] text-neutral-500">Continue learning</p>
         <h2 className="mt-2 text-xl font-semibold">Russian Sounds, Cyrillic & First Conversation</h2>
         <p className="mt-2 text-sm leading-6 text-neutral-600">
           Pareto vocabulary, pronunciation, linguistics, culture, listening and speaking.
         </p>
-        <Link
-          href="/learn"
-          className="mt-4 inline-flex rounded-xl bg-neutral-900 px-4 py-2.5 text-sm font-semibold text-white"
-        >
+        <Link href="/learn" className="mt-4 inline-flex rounded-xl border border-neutral-300 px-4 py-2.5 text-sm font-semibold">
           Continue
         </Link>
       </section>
 
       <section>
-        <h2 className="mb-3 text-lg font-semibold">Arova</h2>
+        <h2 className="mb-3 text-lg font-semibold">Explore Arova</h2>
         <div className="grid gap-3 sm:grid-cols-2">
           {navigation.map((item) => (
-            <Link
-              key={item.title}
-              href={item.href}
-              className="rounded-2xl border border-neutral-200 bg-white p-4 shadow-sm transition hover:border-neutral-400"
-            >
+            <Link key={item.title} href={item.href} className="rounded-2xl border border-neutral-200 bg-white p-4 shadow-sm transition hover:border-neutral-400">
               <h3 className="font-semibold">{item.title}</h3>
               <p className="mt-1 text-sm leading-5 text-neutral-600">{item.text}</p>
             </Link>

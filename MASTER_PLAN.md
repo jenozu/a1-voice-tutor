@@ -1,13 +1,14 @@
-# MVP Master Plan
+# Arova MVP Master Plan
 
 ## Phase 0 — Foundation
 - [x] Select Russian A1 as first course
 - [x] Select mobile-first web architecture
 - [x] Replace Streamlit direction with Next.js + FastAPI
 - [x] Replace Vosk direction with `faster-whisper`
-- [x] Select SQLite and `py-fsrs`
+- [x] Select SQLite and FSRS
 - [x] Document legacy-code boundaries
 - [x] Remove tracked Streamlit secrets file from this branch
+- [x] Lock product name: Arova
 
 ## Phase 1 — Scaffold
 - [x] Create `frontend/` Next.js App Router + TypeScript + Tailwind
@@ -18,8 +19,8 @@
 - [x] Add local dev commands
 
 ## Task 2 — Pareto learning layer
-- [x] Define a Pareto-inspired selection policy without claiming a literal corpus top-100
-- [x] Create a 100-item Stage 1 bank: 65 building blocks + 35 conversational chunks
+- [x] Define Pareto-inspired selection policy
+- [x] Create 100-item Stage 1 bank: 65 building blocks + 35 conversational chunks
 - [x] Split Stage 1 into ten 10-item micro-sessions
 - [x] Add active-recall, speaking, recombination and romanization-fade rules
 - [x] Add Stage 1/session API endpoints
@@ -27,19 +28,32 @@
 - [ ] Persist per-item attempts and use them to unlock sessions automatically
 - [ ] Feed weak/new items into FSRS review
 
+## Task 3 — Lock legacy feature layout into Arova
+- [x] Preserve old Voice Tutor feature set as product requirements
+- [x] Define Learn / Practice / Review / Explore / Progress navigation
+- [x] Promote Linguistics to a first-class Explore module
+- [x] Preserve embedded grammar, culture and linguistics inside lessons
+- [x] Define dedicated Linguistics content map
+- [x] Add initial Arova UI/navigation scaffold
+- [ ] Verify frontend production build
+- [ ] Verify FastAPI runtime and curriculum endpoints on VPS/local checkout
+
 ## Phase 2 — Onboarding and planner
-- [ ] Collect target date, study days, minutes/day or hours/week
+- [ ] Collect language, target level/date, study days and available time
 - [ ] Add Relaxed, Standard, Intensive, and Custom plans
-- [ ] Generate a weekly schedule
+- [ ] Generate a weekly schedule across the structured course
 - [ ] Persist profile and plan
 - [ ] Allow regeneration without losing completed work
 
 ## Phase 3 — First complete lesson
-- [ ] Define lesson JSON schema
+- [ ] Define lesson JSON schema including linguistics/culture/etymology objects
 - [ ] Build Lesson 1: Russian Sounds, Cyrillic & First Conversation
-- [ ] Add vocabulary and grammar
+- [ ] Pull vocabulary from Pareto Stage 1 data
+- [ ] Add grammar
+- [ ] Add embedded linguistics
+- [ ] Add culture and etymology
 - [ ] Add listening and reading
-- [ ] Add culture, linguistics, and etymology callouts
+- [ ] Add speaking and sentence construction
 - [ ] Add text quiz
 - [ ] Save completion progress
 
@@ -53,11 +67,32 @@
 
 ## Phase 5 — Word bank and review
 - [ ] Save lesson vocabulary to learner word bank
-- [ ] Integrate `py-fsrs`
+- [ ] Integrate FSRS
 - [ ] Add Again / Hard / Good / Easy review actions
 - [ ] Persist review logs and next-due dates
+- [ ] Add weak-skill review beyond vocabulary
 
-## Phase 6 — MVP QA and VPS
+## Phase 6 — Practice & Explore expansion
+- [ ] Conversation Mode
+- [ ] Story Mode
+- [ ] Flashcard Builder
+- [ ] Linguistics Explore library
+- [ ] Culture Explore library
+- [ ] Etymology Explore library
+- [ ] Grammar Reference
+- [ ] Thematic Study Paths
+- [ ] Word of the Day
+
+## Phase 7 — Progress & gamification
+- [ ] A1 course map
+- [ ] skill mastery dashboard
+- [ ] speaking/listening time
+- [ ] XP and streaks
+- [ ] weekly goals
+- [ ] badges
+- [ ] leaderboard later
+
+## Phase 8 — MVP QA and VPS
 - [ ] Test complete onboarding-to-review flow
 - [ ] Add mobile responsive polish
 - [ ] Add Caddy HTTPS config
@@ -66,5 +101,13 @@
 - [ ] Test microphone permissions over HTTPS
 - [ ] Test install/add-to-home-screen behavior
 
+## Deferred
+- free-form LLM tutor
+- advanced phoneme-level pronunciation scoring
+- full offline mode
+- SMS reminders
+- custom tutor personalities/voices
+- native iOS/Android apps
+
 ## MVP complete when
-A learner can open the web app on a phone, create a study plan, finish one complete Russian A1 lesson with text and voice, save vocabulary, complete an FSRS review, leave, return, and retain progress.
+A learner can open Arova on a phone, create a study plan, finish one complete Russian A1 lesson containing Pareto language plus embedded linguistics/culture, use text and voice practice, save vocabulary, complete an FSRS review, leave, return, and retain progress.

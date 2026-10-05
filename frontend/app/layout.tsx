@@ -2,9 +2,9 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "A1 Voice Tutor",
-  description: "A mobile-first Russian A1 speaking and listening tutor",
-  applicationName: "A1 Voice Tutor",
+  title: "Arova",
+  description: "Learn languages through speaking, understanding, and intelligent review.",
+  applicationName: "Arova",
 };
 
 export const viewport: Viewport = {

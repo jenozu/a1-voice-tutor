@@ -2,9 +2,9 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "A1 Voice Tutor",
-    short_name: "A1 Tutor",
-    description: "Russian A1 speaking and listening practice",
+    name: "Arova",
+    short_name: "Arova",
+    description: "Learn languages through speaking, understanding, and intelligent review.",
     start_url: "/",
     display: "standalone",
     background_color: "#f7f7f5",

@@ -1,29 +1,56 @@
-const apiBase = process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:8000";
+import Link from "next/link";
+
+const navigation = [
+  { href: "/learn", title: "Learn", text: "Follow your structured A1 course and today's lesson." },
+  { href: "/practice", title: "Practice", text: "Speaking, listening, quizzes, stories and flashcards." },
+  { href: "/review", title: "Review", text: "FSRS reviews and weak-area recovery." },
+  { href: "/explore", title: "Explore", text: "Linguistics, culture, etymology, grammar and word bank." },
+  { href: "/progress", title: "Progress", text: "Course progress, mastery, XP, streaks and goals." },
+];
 
 export default function HomePage() {
   return (
-    <main className="mx-auto flex min-h-screen max-w-xl flex-col gap-6 px-5 py-10">
-      <div className="space-y-2">
+    <main className="mx-auto min-h-screen max-w-xl px-5 py-8">
+      <header className="mb-8">
         <p className="text-sm font-semibold uppercase tracking-[0.18em] text-neutral-500">
           Russian A1
         </p>
-        <h1 className="text-4xl font-bold tracking-tight">A1 Voice Tutor</h1>
-        <p className="text-base leading-7 text-neutral-700">
-          Mobile-first lessons built around high-value Russian, active recall,
-          listening, speaking, and spaced review.
+        <h1 className="mt-2 text-4xl font-bold tracking-tight">Arova</h1>
+        <p className="mt-3 text-base leading-7 text-neutral-700">
+          Learn useful Russian, understand how it works, speak it, and keep it.
         </p>
-      </div>
+      </header>
 
-      <section className="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm">
-        <h2 className="text-lg font-semibold">MVP foundation</h2>
-        <ul className="mt-3 space-y-2 text-sm leading-6 text-neutral-700">
-          <li>Next.js + TypeScript frontend</li>
-          <li>FastAPI + SQLite backend</li>
-          <li>faster-whisper speech-to-text</li>
-          <li>Browser Russian text-to-speech</li>
-          <li>FSRS review scheduling</li>
-        </ul>
-        <p className="mt-4 text-xs text-neutral-500">API: {apiBase}</p>
+      <section className="mb-8 rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm">
+        <p className="text-xs font-semibold uppercase tracking-[0.15em] text-neutral-500">
+          Continue learning
+        </p>
+        <h2 className="mt-2 text-xl font-semibold">Russian Sounds, Cyrillic & First Conversation</h2>
+        <p className="mt-2 text-sm leading-6 text-neutral-600">
+          Pareto vocabulary, pronunciation, linguistics, culture, listening and speaking.
+        </p>
+        <Link
+          href="/learn"
+          className="mt-4 inline-flex rounded-xl bg-neutral-900 px-4 py-2.5 text-sm font-semibold text-white"
+        >
+          Continue
+        </Link>
+      </section>
+
+      <section>
+        <h2 className="mb-3 text-lg font-semibold">Arova</h2>
+        <div className="grid gap-3 sm:grid-cols-2">
+          {navigation.map((item) => (
+            <Link
+              key={item.title}
+              href={item.href}
+              className="rounded-2xl border border-neutral-200 bg-white p-4 shadow-sm transition hover:border-neutral-400"
+            >
+              <h3 className="font-semibold">{item.title}</h3>
+              <p className="mt-1 text-sm leading-5 text-neutral-600">{item.text}</p>
+            </Link>
+          ))}
+        </div>
       </section>
     </main>
   );

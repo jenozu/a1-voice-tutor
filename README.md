@@ -1,48 +1,35 @@
-# A1 Voice Tutor
+# Arova
 
-Russian A1 mobile-first web app/PWA.
+Arova is a mobile-first language-learning app. Russian A1 is the first course.
 
-## Current architecture
+The product preserves the original Voice Tutor feature vision while moving to a lean web architecture and a Pareto-first learning model.
 
-The active MVP path is:
+## Product structure
 
-- `frontend/` — Next.js App Router + TypeScript + Tailwind CSS
+- **Learn** — structured 24-lesson A1 course
+- **Practice** — speaking, listening, quizzes, stories and flashcards
+- **Review** — FSRS and weak-area recovery
+- **Explore** — linguistics, culture, etymology, grammar reference and word bank
+- **Progress** — mastery, course map, XP, streaks and goals
+
+Linguistics is a first-class feature and also appears inside lessons when it explains the material being learned.
+
+See:
+- `PRD.md`
+- `MASTER_PLAN.md`
+- `docs/FEATURE_ARCHITECTURE.md`
+- `docs/LINGUISTICS.md`
+- `docs/PARETO_LEARNING.md`
+- `docs/TECH_STACK.md`
+
+## Active architecture
+
+- `frontend/` — Next.js App Router + TypeScript + Tailwind
 - `backend/` — FastAPI + SQLite + Python learning/speech services
-- `content/ru/a1/` — versioned Russian A1 curriculum data
-- `faster-whisper` — server-side speech-to-text
-- browser Speech Synthesis — Russian text-to-speech
-- `fsrs` — spaced-repetition scheduling
-- VPS deployment — Caddy + Docker Compose after the local vertical slice is working
+- `content/ru/a1/` — canonical Russian A1 curriculum data
+- `faster-whisper` — speech-to-text
+- browser Speech Synthesis — text-to-speech
+- FSRS — spaced repetition
+- VPS deployment — Caddy + Docker Compose after verification
 
-The original Streamlit/Python prototype is still present as legacy reference while the new vertical slice is built. Do not extend `app.py` or the old CSV-first UI for new MVP features.
-
-## Local development
-
-### Backend
-
-```bash
-cd backend
-python -m venv .venv
-# Windows: .venv\Scripts\activate
-# macOS/Linux: source .venv/bin/activate
-pip install -r requirements.txt
-uvicorn app.main:app --reload --port 8000
-```
-
-Health check: `http://localhost:8000/health`
-
-### Frontend
-
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
-Open `http://localhost:3000`.
-
-Copy `.env.example` to `.env` when local overrides are needed.
-
-## Build order
-
-See `MASTER_PLAN.md`, `PRD.md`, `docs/TECH_STACK.md`, and `docs/MIGRATION_PLAN.md`.
+The original Streamlit/Python prototype remains in the repository as migration/reference material. Do not add new product features to `app.py`.

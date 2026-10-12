@@ -1,57 +1,98 @@
 import Link from "next/link";
+import AppNav from "@/components/AppNav";
 
-const navigation = [
-  { href: "/learn", title: "Learn", text: "Follow your structured A1 course and today's lesson." },
-  { href: "/practice", title: "Practice", text: "Speaking, listening, quizzes, stories and flashcards." },
-  { href: "/review", title: "Review", text: "FSRS reviews and weak-area recovery." },
-  { href: "/explore", title: "Explore", text: "Linguistics, culture, etymology, grammar and word bank." },
-  { href: "/progress", title: "Progress", text: "Course progress, mastery, XP, streaks and goals." },
+const quick = [
+  { href: "/practice", title: "Speak", meta: "5 min", bg: "bg-[var(--arova-lilac)]" },
+  { href: "/review", title: "Review", meta: "6 due", bg: "bg-[var(--arova-mint)]" },
+  { href: "/explore/linguistics", title: "Linguistics", meta: "Learn why", bg: "bg-[var(--arova-yellow)]" },
 ];
 
 export default function HomePage() {
   return (
-    <main className="mx-auto min-h-screen max-w-xl px-5 py-8">
-      <header className="mb-8">
-        <p className="text-sm font-semibold uppercase tracking-[0.18em] text-neutral-500">Russian A1</p>
-        <h1 className="mt-2 text-4xl font-bold tracking-tight">Arova</h1>
-        <p className="mt-3 text-base leading-7 text-neutral-700">
-          Learn useful Russian, understand how it works, speak it, and keep it.
-        </p>
+    <main className="arova-shell">
+      <header className="flex items-start justify-between gap-5">
+        <div>
+          <p className="arova-kicker text-neutral-500">Russian A1</p>
+          <h1 className="mt-1 text-4xl font-black tracking-[-0.04em]">Arova</h1>
+        </div>
+        <div className="rounded-full bg-white px-3 py-2 text-sm font-bold shadow-sm">7 day streak</div>
       </header>
 
-      <section className="mb-5 rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm">
-        <p className="text-xs font-semibold uppercase tracking-[0.15em] text-neutral-500">Start here</p>
-        <h2 className="mt-2 text-xl font-semibold">Create your study plan</h2>
-        <p className="mt-2 text-sm leading-6 text-neutral-600">
-          Choose your schedule and target, then Arova will pace the 24-lesson course around you.
-        </p>
-        <Link href="/onboarding" className="mt-4 inline-flex rounded-xl bg-neutral-900 px-4 py-2.5 text-sm font-semibold text-white">
-          Set up Arova
-        </Link>
+      <section className="mt-6 overflow-hidden rounded-[2rem] border border-black/5 bg-[var(--arova-pink)] p-6 shadow-[0_20px_55px_rgba(95,50,72,.13)]">
+        <div className="flex items-center justify-between gap-4">
+          <p className="arova-kicker">Today&apos;s word</p>
+          <span className="rounded-full bg-white/70 px-3 py-1 text-xs font-bold">Day 1</span>
+        </div>
+        <p className="mt-7 text-5xl font-black tracking-tight">сегодня</p>
+        <p className="mt-2 text-sm font-bold text-neutral-600">segodnya</p>
+        <p className="mt-5 text-2xl font-bold">today</p>
+        <div className="mt-6 rounded-2xl bg-white/65 p-4">
+          <p className="text-lg font-bold">Сегодня я работаю.</p>
+          <p className="mt-1 text-sm text-neutral-600">Today I am working.</p>
+        </div>
+        <div className="mt-5 flex flex-wrap gap-2">
+          <button className="arova-button" type="button">Listen</button>
+          <Link className="arova-button-soft" href="/today">Practice this word</Link>
+        </div>
       </section>
 
-      <section className="mb-8 rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm">
-        <p className="text-xs font-semibold uppercase tracking-[0.15em] text-neutral-500">Continue learning</p>
-        <h2 className="mt-2 text-xl font-semibold">Russian Sounds, Cyrillic & First Conversation</h2>
-        <p className="mt-2 text-sm leading-6 text-neutral-600">
-          Pareto vocabulary, pronunciation, linguistics, culture, listening and speaking.
-        </p>
-        <Link href="/learn" className="mt-4 inline-flex rounded-xl border border-neutral-300 px-4 py-2.5 text-sm font-semibold">
-          Continue
-        </Link>
+            <section className="arova-card mt-5 p-5">
+        <div className="flex items-center justify-between">
+          <p className="arova-kicker text-neutral-500">Continue lesson</p>
+          <span className="text-xs font-bold text-neutral-500">10 min</span>
+        </div>
+        <h2 className="mt-2 text-2xl font-black tracking-tight">Russian Sounds & First Conversation</h2>
+        <p className="mt-2 text-sm leading-6 text-neutral-600">Vocabulary · Listening · Linguistics · Speaking</p>
+        <div className="mt-5 h-3 overflow-hidden rounded-full bg-neutral-100">
+          <div className="h-full w-[35%] rounded-full bg-[var(--arova-pink-deep)]" />
+        </div>
+        <div className="mt-2 flex justify-between text-xs font-bold text-neutral-500">
+          <span>Lesson 1</span><span>35%</span>
+        </div>
+        <Link href="/learn/session/1" className="arova-button mt-5">Continue lesson</Link>
       </section>
 
-      <section>
-        <h2 className="mb-3 text-lg font-semibold">Explore Arova</h2>
-        <div className="grid gap-3 sm:grid-cols-2">
-          {navigation.map((item) => (
-            <Link key={item.title} href={item.href} className="rounded-2xl border border-neutral-200 bg-white p-4 shadow-sm transition hover:border-neutral-400">
-              <h3 className="font-semibold">{item.title}</h3>
-              <p className="mt-1 text-sm leading-5 text-neutral-600">{item.text}</p>
+      <section className="mt-5">
+        <div className="mb-3 flex items-end justify-between">
+          <div>
+            <p className="arova-kicker text-neutral-500">Today&apos;s plan</p>
+            <h2 className="mt-1 text-2xl font-black">Keep the streak easy.</h2>
+          </div>
+          <span className="text-sm font-bold">1 / 4</span>
+        </div>
+        <div className="grid gap-2">
+          {[
+            ["Daily word", "Done", true],
+            ["Lesson", "10 min", false],
+            ["Reviews", "6 due", false],
+            ["Speaking", "5 min", false],
+          ].map(([name, meta, done]) => (
+            <div key={name as string} className="flex items-center justify-between rounded-2xl border border-[var(--arova-line)] bg-white px-4 py-3">
+              <div className="flex items-center gap-3">
+                <span className={`flex h-8 w-8 items-center justify-center rounded-full text-sm font-black ${done ? "bg-[var(--arova-pink)]" : "bg-neutral-100"}`}>
+                  {done ? "✓" : "○"}
+                </span>
+                <span className="font-bold">{name}</span>
+              </div>
+              <span className="text-sm text-neutral-500">{meta}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="mt-6">
+        <p className="arova-kicker text-neutral-500">Jump back in</p>
+        <div className="mt-3 grid grid-cols-3 gap-3">
+          {quick.map((item) => (
+            <Link key={item.title} href={item.href} className={`rounded-3xl p-4 ${item.bg}`}>
+              <p className="text-lg font-black">{item.title}</p>
+              <p className="mt-8 text-xs font-bold text-neutral-600">{item.meta}</p>
             </Link>
           ))}
         </div>
       </section>
+
+      <AppNav />
     </main>
   );
 }

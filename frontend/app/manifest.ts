@@ -7,7 +7,7 @@ export default function manifest(): MetadataRoute.Manifest {
     description: "Learn languages through speaking, understanding, and intelligent review.",
     start_url: "/",
     display: "standalone",
-    background_color: "#f7f7f5",
-    theme_color: "#111827",
+    background_color: "#fffafc",
+    theme_color: "#ffd8e8",
   };
 }

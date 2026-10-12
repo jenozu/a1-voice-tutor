@@ -3,17 +3,116 @@
 :root {
   color-scheme: light;
   font-family: Arial, Helvetica, sans-serif;
-  background: #f7f7f5;
-  color: #171717;
+  background: #fffafc;
+  color: #161616;
+  --arova-pink: #ffd8e8;
+  --arova-pink-deep: #ffb8d2;
+  --arova-ink: #141414;
+  --arova-paper: #fffafc;
+  --arova-card: #ffffff;
+  --arova-muted: #6f6870;
+  --arova-line: #eadfe5;
+  --arova-lilac: #e9ddff;
+  --arova-yellow: #fff0b8;
+  --arova-mint: #dff6e8;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
   min-height: 100vh;
-  background: #f7f7f5;
+  background:
+    radial-gradient(circle at top left, rgba(255, 216, 232, 0.7), transparent 30rem),
+    linear-gradient(180deg, #fffafc 0%, #fff 45%, #fffafc 100%);
+  color: var(--arova-ink);
 }
 
 button,
-input {
+input,
+select {
   font: inherit;
+}
+
+::selection {
+  background: var(--arova-pink);
+  color: var(--arova-ink);
+}
+
+.arova-shell {
+  width: min(100%, 760px);
+  margin: 0 auto;
+  padding: 1.25rem 1rem 6.5rem;
+}
+
+.arova-card {
+  border: 1px solid var(--arova-line);
+  background: rgba(255,255,255,.92);
+  border-radius: 1.5rem;
+  box-shadow: 0 16px 40px rgba(59, 36, 48, .08);
+}
+
+.arova-kicker {
+  font-size: .73rem;
+  font-weight: 800;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+.arova-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: var(--arova-ink);
+  color: white;
+  padding: .78rem 1.15rem;
+  font-size: .9rem;
+  font-weight: 800;
+}
+
+.arova-button-soft {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  border: 1px solid rgba(20,20,20,.12);
+  background: rgba(255,255,255,.7);
+  padding: .72rem 1rem;
+  font-size: .88rem;
+  font-weight: 700;
+}
+
+.arova-bottom-nav {
+  position: fixed;
+  left: 50%;
+  bottom: 1rem;
+  z-index: 30;
+  transform: translateX(-50%);
+  width: min(calc(100% - 1.5rem), 720px);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: .35rem;
+  padding: .5rem;
+  border: 1px solid var(--arova-line);
+  border-radius: 1.4rem;
+  background: rgba(255,250,252,.94);
+  box-shadow: 0 18px 44px rgba(59,36,48,.16);
+  backdrop-filter: blur(14px);
+}
+
+.arova-bottom-nav a {
+  border-radius: 1rem;
+  padding: .65rem .3rem;
+  text-align: center;
+  font-size: .72rem;
+  font-weight: 800;
+  color: #5d555a;
+}
+
+.arova-bottom-nav a:hover {
+  background: var(--arova-pink);
+  color: var(--arova-ink);
 }

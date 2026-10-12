@@ -1,10 +1,18 @@
 import Link from "next/link";
 import AppNav from "@/components/AppNav";
+import SpeakButton from "@/components/SpeakButton";
 
 const quick = [
-  { href: "/practice", title: "Speak", meta: "5 min", bg: "bg-[var(--arova-lilac)]" },
-  { href: "/review", title: "Review", meta: "6 due", bg: "bg-[var(--arova-mint)]" },
+  { href: "/practice/speaking", title: "Speak", meta: "5 min", bg: "bg-[var(--arova-lilac)]" },
+  { href: "/review/due", title: "Review", meta: "6 due", bg: "bg-[var(--arova-mint)]" },
   { href: "/explore/linguistics", title: "Linguistics", meta: "Learn why", bg: "bg-[var(--arova-yellow)]" },
+];
+
+const plan = [
+  { name: "Daily word", meta: "Done", done: true, href: "/today" },
+  { name: "Lesson", meta: "10 min", done: false, href: "/learn/session/1" },
+  { name: "Reviews", meta: "6 due", done: false, href: "/review/due" },
+  { name: "Speaking", meta: "5 min", done: false, href: "/practice/speaking" },
 ];
 
 export default function HomePage() {
@@ -15,13 +23,13 @@ export default function HomePage() {
           <p className="arova-kicker text-neutral-500">Russian A1</p>
           <h1 className="mt-1 text-4xl font-black tracking-[-0.04em]">Arova</h1>
         </div>
-        <div className="rounded-full bg-white px-3 py-2 text-sm font-bold shadow-sm">7 day streak</div>
+        <Link href="/progress/goals" className="rounded-full bg-white px-3 py-2 text-sm font-bold shadow-sm">7 day streak</Link>
       </header>
 
       <section className="mt-6 overflow-hidden rounded-[2rem] border border-black/5 bg-[var(--arova-pink)] p-6 shadow-[0_20px_55px_rgba(95,50,72,.13)]">
         <div className="flex items-center justify-between gap-4">
           <p className="arova-kicker">Today&apos;s word</p>
-          <span className="rounded-full bg-white/70 px-3 py-1 text-xs font-bold">Day 1</span>
+          <Link href="/today" className="rounded-full bg-white/70 px-3 py-1 text-xs font-bold">Day 1 →</Link>
         </div>
         <p className="mt-7 text-5xl font-black tracking-tight">сегодня</p>
         <p className="mt-2 text-sm font-bold text-neutral-600">segodnya</p>
@@ -31,12 +39,12 @@ export default function HomePage() {
           <p className="mt-1 text-sm text-neutral-600">Today I am working.</p>
         </div>
         <div className="mt-5 flex flex-wrap gap-2">
-          <button className="arova-button" type="button">Listen</button>
+          <SpeakButton text="сегодня" />
           <Link className="arova-button-soft" href="/today">Practice this word</Link>
         </div>
       </section>
 
-            <section className="arova-card mt-5 p-5">
+      <section className="arova-card mt-5 p-5">
         <div className="flex items-center justify-between">
           <p className="arova-kicker text-neutral-500">Continue lesson</p>
           <span className="text-xs font-bold text-neutral-500">10 min</span>
@@ -46,9 +54,7 @@ export default function HomePage() {
         <div className="mt-5 h-3 overflow-hidden rounded-full bg-neutral-100">
           <div className="h-full w-[35%] rounded-full bg-[var(--arova-pink-deep)]" />
         </div>
-        <div className="mt-2 flex justify-between text-xs font-bold text-neutral-500">
-          <span>Lesson 1</span><span>35%</span>
-        </div>
+        <div className="mt-2 flex justify-between text-xs font-bold text-neutral-500"><span>Lesson 1</span><span>35%</span></div>
         <Link href="/learn/session/1" className="arova-button mt-5">Continue lesson</Link>
       </section>
 
@@ -61,21 +67,16 @@ export default function HomePage() {
           <span className="text-sm font-bold">1 / 4</span>
         </div>
         <div className="grid gap-2">
-          {[
-            ["Daily word", "Done", true],
-            ["Lesson", "10 min", false],
-            ["Reviews", "6 due", false],
-            ["Speaking", "5 min", false],
-          ].map(([name, meta, done]) => (
-            <div key={name as string} className="flex items-center justify-between rounded-2xl border border-[var(--arova-line)] bg-white px-4 py-3">
+          {plan.map((item) => (
+            <Link key={item.name} href={item.href} className="flex items-center justify-between rounded-2xl border border-[var(--arova-line)] bg-white px-4 py-3 transition hover:-translate-y-0.5">
               <div className="flex items-center gap-3">
-                <span className={`flex h-8 w-8 items-center justify-center rounded-full text-sm font-black ${done ? "bg-[var(--arova-pink)]" : "bg-neutral-100"}`}>
-                  {done ? "✓" : "○"}
+                <span className={`flex h-8 w-8 items-center justify-center rounded-full text-sm font-black ${item.done ? "bg-[var(--arova-pink)]" : "bg-neutral-100"}`}>
+                  {item.done ? "✓" : "○"}
                 </span>
-                <span className="font-bold">{name}</span>
+                <span className="font-bold">{item.name}</span>
               </div>
-              <span className="text-sm text-neutral-500">{meta}</span>
-            </div>
+              <span className="text-sm text-neutral-500">{item.meta} →</span>
+            </Link>
           ))}
         </div>
       </section>

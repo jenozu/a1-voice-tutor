@@ -3,10 +3,10 @@ import AppNav from "@/components/AppNav";
 
 const cards = [
   ["/explore/linguistics","Linguistics","Why Russian works the way it does.","bg-[var(--arova-yellow)]"],
-  ["#","Culture","Context that changes how real Russian sounds and feels.","bg-[var(--arova-pink)]"],
-  ["#","Etymology","Word origins and families that actually help memory.","bg-[var(--arova-lilac)]"],
-  ["#","Grammar","A reference connected back to what you have learned.","bg-[var(--arova-mint)]"],
-  ["#","Word Bank","Your growing collection of learned and upcoming Russian.","bg-white"],
+  ["/explore/culture","Culture","Context that changes how real Russian sounds and feels.","bg-[var(--arova-pink)]"],
+  ["/explore/etymology","Etymology","Word origins and families that actually help memory.","bg-[var(--arova-lilac)]"],
+  ["/explore/grammar","Grammar","A reference connected back to what you have learned.","bg-[var(--arova-mint)]"],
+  ["/explore/word-bank","Word Bank","Your growing collection of learned and upcoming Russian.","bg-white"],
 ];
 
 export default function ExplorePage() {

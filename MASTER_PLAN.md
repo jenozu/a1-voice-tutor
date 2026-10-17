@@ -28,15 +28,14 @@
 - [ ] Persist per-item attempts and use them to unlock sessions automatically
 - [ ] Feed weak/new items into FSRS review
 
-## Task 3 — Lock legacy feature layout into Arova
+## Task 3 — Product layout and visual direction
 - [x] Preserve old Voice Tutor feature set as product requirements
 - [x] Define Learn / Practice / Review / Explore / Progress navigation
 - [x] Promote Linguistics to a first-class Explore module
 - [x] Preserve embedded grammar, culture and linguistics inside lessons
 - [x] Define dedicated Linguistics content map
-- [x] Add initial Arova UI/navigation scaffold
-- [ ] Verify frontend production build
-- [ ] Verify FastAPI runtime and curriculum endpoints on VPS/local checkout
+- [x] Redesign Arova around the Scriptable-inspired daily-learning experience
+- [x] Make visible navigation/cards interactive
 
 ## Task 4 — First functional learning flow
 - [x] Add onboarding screen for target date, study days, time and pace
@@ -51,14 +50,6 @@
 - [ ] Unlock Session 2 automatically after mastery
 - [ ] Send weak items into FSRS
 
-## Phase 2 — Onboarding and planner
-- [x] Collect language, target level/date, study days and available time
-- [x] Add Relaxed, Standard, Intensive, and Custom plans
-- [x] Generate a weekly schedule estimate across the structured course
-- [x] Persist profile and plan
-- [x] Allow plan regeneration without deleting progress
-- [ ] Add calendar-style weekly schedule UI
-
 ## Phase 3 — First complete lesson
 - [ ] Define lesson JSON schema including linguistics/culture/etymology objects
 - [ ] Build full Lesson 1: Russian Sounds, Cyrillic & First Conversation
@@ -68,17 +59,21 @@
 - [x] Add culture
 - [ ] Add etymology
 - [ ] Add listening and reading
-- [ ] Add speaking and sentence construction
+- [x] Add initial speaking/recording flow
 - [x] Add recognition/production mastery check
 - [ ] Save detailed completion progress
 
 ## Phase 4 — Voice
-- [ ] Add browser microphone recording
-- [ ] Add FastAPI audio upload endpoint
-- [ ] Integrate `faster-whisper`
-- [ ] Add Russian browser TTS
-- [ ] Add spoken-answer feedback and retry flow
-- [ ] Test on desktop and phone
+- [x] Add browser microphone recording
+- [x] Add FastAPI audio upload endpoint
+- [x] Integrate local `faster-whisper` transcription
+- [x] Add Azure neural Russian TTS with disk caching
+- [x] Add normal / slow / sentence playback pattern
+- [x] Keep browser TTS as fallback only
+- [x] Add spoken-answer transcription and retry foundation
+- [ ] Add richer spoken-answer feedback
+- [ ] Test TTS/STT on desktop
+- [ ] Test microphone and audio on phone
 
 ## Phase 5 — Word bank and review
 - [ ] Save lesson vocabulary to learner word bank
@@ -96,7 +91,7 @@
 - [ ] Etymology Explore library
 - [ ] Grammar Reference
 - [ ] Thematic Study Paths
-- [ ] Word of the Day
+- [x] Word of the Day foundation
 
 ## Phase 7 — Progress & gamification
 - [ ] A1 course map
@@ -110,9 +105,8 @@
 ## Phase 8 — MVP QA and VPS
 - [ ] Test complete onboarding-to-review flow
 - [ ] Add mobile responsive polish
-- [ ] Add Caddy HTTPS config
-- [ ] Add Docker Compose deployment
-- [ ] Deploy to VPS
+- [x] Deploy current demo to VPS with Docker + Traefik
+- [ ] Verify neural TTS credentials on VPS
 - [ ] Test microphone permissions over HTTPS
 - [ ] Test install/add-to-home-screen behavior
 
@@ -125,4 +119,4 @@
 - native iOS/Android apps
 
 ## MVP complete when
-A learner can open Arova on a phone, create a study plan, finish one complete Russian A1 lesson containing Pareto language plus embedded linguistics/culture, use text and voice practice, save vocabulary, complete an FSRS review, leave, return, and retain progress.
+A learner can open Arova on a phone, create a study plan, finish one complete Russian A1 lesson containing Pareto language plus embedded linguistics/culture, use natural neural audio and voice practice, save vocabulary, complete an FSRS review, leave, return, and retain progress.

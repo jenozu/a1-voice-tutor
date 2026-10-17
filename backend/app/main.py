@@ -1,9 +1,13 @@
 from __future__ import annotations
 
+import tempfile
 from contextlib import asynccontextmanager
+from pathlib import Path
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, File, HTTPException, UploadFile
+from fastapi.concurrency import run_in_threadpool
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import FileResponse
 from pydantic import BaseModel, Field
 
 from .config import settings
@@ -11,6 +15,13 @@ from .content import stage_1_session, stage_1_summary
 from .db import get_settings, init_db, save_settings
 from .pareto import mastery_status
 from .planner import build_plan
+from .stt import transcribe
+from .tts import is_configured as tts_is_configured
+from .tts import synthesize
+
+
+MAX_TTS_CHARS = 500
+MAX_STT_BYTES = 8 * 1024 * 1024
 
 
 @asynccontextmanager
@@ -21,7 +32,7 @@ async def lifespan(_: FastAPI):
 
 app = FastAPI(
     title="Arova API",
-    version="0.3.0",
+    version="0.4.0",
     lifespan=lifespan,
 )
 
@@ -46,6 +57,10 @@ class LearnerSettings(BaseModel):
     study_days: list[str] = []
     minutes_per_day: int = Field(default=25, ge=5, le=240)
     pace: str = Field(default="standard", pattern="^(relaxed|standard|intensive|custom)$")
+
+
+class TTSRequest(BaseModel):
+    text: str = Field(min_length=1, max_length=MAX_TTS_CHARS)
 
 
 @app.get("/health")
@@ -77,6 +92,59 @@ def update_profile(payload: LearnerSettings) -> dict[str, object]:
         plan=plan,
     )
     return {"configured": True, "profile": stored}
+
+
+@app.get("/api/tts/status")
+def tts_status() -> dict[str, object]:
+    return {
+        "provider": "azure",
+        "configured": tts_is_configured(),
+        "voice": settings.azure_tts_voice,
+        "output_format": settings.azure_tts_output_format,
+        "cache": "disk",
+    }
+
+
+@app.post("/api/tts")
+def text_to_speech(payload: TTSRequest) -> FileResponse:
+    if not tts_is_configured():
+        raise HTTPException(
+            status_code=503,
+            detail="Neural TTS is not configured on this server.",
+        )
+    try:
+        path, cache_hit = synthesize(payload.text)
+    except (ValueError, RuntimeError) as exc:
+        raise HTTPException(status_code=502, detail=str(exc)) from exc
+
+    return FileResponse(
+        path,
+        media_type="audio/mpeg",
+        filename="arova-speech.mp3",
+        headers={"X-Arova-TTS-Cache": "HIT" if cache_hit else "MISS"},
+    )
+
+
+@app.post("/api/stt/transcribe")
+async def speech_to_text(file: UploadFile = File(...)) -> dict[str, object]:
+    content = await file.read(MAX_STT_BYTES + 1)
+    if len(content) > MAX_STT_BYTES:
+        raise HTTPException(status_code=413, detail="Audio file is too large.")
+
+    suffix = Path(file.filename or "speech.webm").suffix or ".webm"
+    temporary_path: Path | None = None
+    try:
+        with tempfile.NamedTemporaryFile(delete=False, suffix=suffix) as temporary:
+            temporary.write(content)
+            temporary_path = Path(temporary.name)
+
+        result = await run_in_threadpool(transcribe, temporary_path, "ru")
+        return result
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=f"Transcription failed: {exc}") from exc
+    finally:
+        if temporary_path and temporary_path.exists():
+            temporary_path.unlink(missing_ok=True)
 
 
 @app.get("/api/courses/ru-a1/stage-1")

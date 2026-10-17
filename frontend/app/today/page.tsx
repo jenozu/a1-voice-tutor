@@ -3,16 +3,10 @@
 import Link from "next/link";
 import { useState } from "react";
 import AppNav from "@/components/AppNav";
+import SpeakButton from "@/components/SpeakButton";
 
 export default function TodayPage() {
   const [revealed, setRevealed] = useState(false);
-
-  function speak() {
-    if (typeof window === "undefined" || !("speechSynthesis" in window)) return;
-    const utterance = new SpeechSynthesisUtterance("сегодня");
-    utterance.lang = "ru-RU";
-    window.speechSynthesis.speak(utterance);
-  }
 
   return (
     <main className="arova-shell">
@@ -22,7 +16,11 @@ export default function TodayPage() {
         <p className="mt-7 text-5xl font-black">сегодня</p>
         <p className="mt-2 text-sm font-bold text-neutral-600">segodnya</p>
         <p className="mt-5 text-2xl font-bold">today</p>
-        <button onClick={speak} className="arova-button mt-5" type="button">Listen</button>
+        <div className="mt-5 flex flex-wrap gap-2">
+          <SpeakButton text="сегодня" label="Normal" />
+          <SpeakButton text="сегодня" label="Slow" rate={0.78} className="arova-button-soft" />
+          <SpeakButton text="Сегодня я работаю." label="Sentence" className="arova-button-soft" />
+        </div>
       </section>
 
       <section className="arova-card mt-5 p-5">

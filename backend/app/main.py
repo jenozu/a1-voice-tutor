@@ -16,7 +16,7 @@ from .db import get_settings, init_db, save_settings
 from .pareto import mastery_status
 from .planner import build_plan
 from .stt import transcribe
-from .tts import is_configured as tts_is_configured
+from .tts import status as tts_runtime_status
 from .tts import synthesize
 
 
@@ -32,7 +32,7 @@ async def lifespan(_: FastAPI):
 
 app = FastAPI(
     title="Arova API",
-    version="0.4.0",
+    version="0.5.0",
     lifespan=lifespan,
 )
 
@@ -96,31 +96,22 @@ def update_profile(payload: LearnerSettings) -> dict[str, object]:
 
 @app.get("/api/tts/status")
 def tts_status() -> dict[str, object]:
-    return {
-        "provider": "azure",
-        "configured": tts_is_configured(),
-        "voice": settings.azure_tts_voice,
-        "output_format": settings.azure_tts_output_format,
-        "cache": "disk",
-    }
+    return tts_runtime_status()
 
 
 @app.post("/api/tts")
 def text_to_speech(payload: TTSRequest) -> FileResponse:
-    if not tts_is_configured():
-        raise HTTPException(
-            status_code=503,
-            detail="Neural TTS is not configured on this server.",
-        )
     try:
         path, cache_hit = synthesize(payload.text)
     except (ValueError, RuntimeError) as exc:
         raise HTTPException(status_code=502, detail=str(exc)) from exc
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=f"Local TTS failed: {exc}") from exc
 
     return FileResponse(
         path,
-        media_type="audio/mpeg",
-        filename="arova-speech.mp3",
+        media_type="audio/wav",
+        filename="arova-speech.wav",
         headers={"X-Arova-TTS-Cache": "HIT" if cache_hit else "MISS"},
     )
 

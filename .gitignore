@@ -29,6 +29,7 @@ uploads/
 recordings/
 audio-cache/
 backend/data/tts_cache/
+backend/data/piper/
 
 # Speech models
 models/

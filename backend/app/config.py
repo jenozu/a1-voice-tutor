@@ -20,13 +20,12 @@ class Settings:
     whisper_device: str = os.getenv("WHISPER_DEVICE", "cpu")
     whisper_compute_type: str = os.getenv("WHISPER_COMPUTE_TYPE", "int8")
 
-    # Text-to-speech: Azure Speech. The key stays server-side.
-    azure_speech_key: str = os.getenv("AZURE_SPEECH_KEY", "")
-    azure_speech_region: str = os.getenv("AZURE_SPEECH_REGION", "")
-    azure_tts_voice: str = os.getenv("AZURE_TTS_VOICE", "ru-RU-SvetlanaNeural")
-    azure_tts_output_format: str = os.getenv(
-        "AZURE_TTS_OUTPUT_FORMAT",
-        "audio-24khz-48kbitrate-mono-mp3",
+    # Text-to-speech: local Piper. No API key or paid service required.
+    piper_voice: str = os.getenv("PIPER_VOICE", "ru_RU-dmitri-medium")
+    piper_model_dir: str = os.getenv("PIPER_MODEL_DIR", "./data/piper")
+    piper_voice_repo: str = os.getenv(
+        "PIPER_VOICE_REPO",
+        "https://huggingface.co/rhasspy/piper-voices/resolve/main",
     )
     tts_cache_dir: str = os.getenv("TTS_CACHE_DIR", "./data/tts_cache")
 

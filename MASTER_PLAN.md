@@ -67,12 +67,14 @@
 - [x] Add browser microphone recording
 - [x] Add FastAPI audio upload endpoint
 - [x] Integrate local `faster-whisper` transcription
-- [x] Add Azure neural Russian TTS with disk caching
+- [x] Replace paid/cloud TTS direction with local Piper TTS
+- [x] Add automatic one-time Piper voice download
+- [x] Add local disk caching for generated speech
 - [x] Add normal / slow / sentence playback pattern
 - [x] Keep browser TTS as fallback only
-- [x] Add spoken-answer transcription and retry foundation
+- [x] Add spoken-answer transcription foundation
 - [ ] Add richer spoken-answer feedback
-- [ ] Test TTS/STT on desktop
+- [ ] Test Piper/faster-whisper on desktop
 - [ ] Test microphone and audio on phone
 
 ## Phase 5 — Word bank and review
@@ -106,7 +108,8 @@
 - [ ] Test complete onboarding-to-review flow
 - [ ] Add mobile responsive polish
 - [x] Deploy current demo to VPS with Docker + Traefik
-- [ ] Verify neural TTS credentials on VPS
+- [ ] Verify Piper TTS on VPS
+- [ ] Verify faster-whisper on VPS
 - [ ] Test microphone permissions over HTTPS
 - [ ] Test install/add-to-home-screen behavior
 
@@ -119,4 +122,4 @@
 - native iOS/Android apps
 
 ## MVP complete when
-A learner can open Arova on a phone, create a study plan, finish one complete Russian A1 lesson containing Pareto language plus embedded linguistics/culture, use natural neural audio and voice practice, save vocabulary, complete an FSRS review, leave, return, and retain progress.
+A learner can open Arova on a phone, create a study plan, finish one complete Russian A1 lesson containing Pareto language plus embedded linguistics/culture, use locally generated speech and voice practice, save vocabulary, complete an FSRS review, leave, return, and retain progress.

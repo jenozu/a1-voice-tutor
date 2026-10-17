@@ -28,6 +28,7 @@ data/private/
 uploads/
 recordings/
 audio-cache/
+backend/data/tts_cache/
 
 # Speech models
 models/
